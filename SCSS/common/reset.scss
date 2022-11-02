@@ -11,6 +11,9 @@
 
 body {
   background-color: #F6F6F6;
+  @media (max-width:426px) {
+    background-color: white;
+  }
 }
 
 ul,ol{
