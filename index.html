@@ -5,13 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>ZeonWear</title>
 </head>
 
 <body>
-  <a href="/Pages/auth.html">
-    Click
-  </a>
+  <header>
+    <nav class="nav">
+      <p>8 (800) 201-06-19</p>
+      <ul class="nav-list">
+        <li><img src="/assets/icons/insta.svg" alt="instagram-icon"></li>
+        <li><img src="/assets/icons/telega.svg" alt="telegram-icon"></li>
+        <li><img src="/assets/icons/facebook.svg" alt="facebook-icon"></li>
+        <li><img src="/assets/icons/vk.svg" alt="vk-icon"></li>
+        <li><img src="/assets/icons/youtube.svg" alt="youtube-icon"></li>
+      </ul>
+      <a href="/index.html">
+        <h1 class="nav-logo">zeon wear</h1>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="container-inner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/images/slider-rugby.png" alt="man-with-rugby-clothe"></div>
+            <div class="swiper-slide"><img src="/assets/images/slider-basketball.png" alt="basketball"></div>
+            <div class="swiper-slide"><img src="/assets/images/slider-girl.png" alt="girl-with-topic"></div>
+            <div class="swiper-slide"><img src="/assets/images/slider-watch.png" alt="air-pods and apple watch"></div>
+            <div class="swiper-slide"><img src="/assets/images/slider-hockey.png" alt="hockey-player"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+  </main>
   <script src="/JS/index.js"></script>
 </body>
 
