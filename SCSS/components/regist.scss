@@ -195,6 +195,7 @@
                      .regist-form-select {
                         @extend %extend-auth-input;
                         font-size: 13px;
+                        background-color: white;
 
                         &.date {
                            width: 164px;
