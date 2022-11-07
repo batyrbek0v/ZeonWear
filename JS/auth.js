@@ -5,7 +5,7 @@ const $navList2 = document.querySelector('.nav-bottom-list2')
 const $passwordIcon = document.querySelector('.password-icon')
 const $hidePassword = document.querySelector('.hide')
 const $password = document.querySelector('.password-input')
-
+const $registCheckbox = document.querySelector('.regist-chekbox')
 // DOM-ELEMENTS
 
 
@@ -43,7 +43,6 @@ const navRoutes = [
   },
 ]
 
-
 window.addEventListener('load', () => {
 
   const links = navRoutes.slice(0, 3)
@@ -57,18 +56,16 @@ window.addEventListener('load', () => {
     .map(({ title, route }) => {
       return routeTemplate(title, route)
     }).join('')
-  $navList2.innerHTML = links2
 
+  $navList2.innerHTML = links2
+  // .ariaChecked = 'checked'
+  console.log($registCheckbox);
 })
 
 
-const routeTemplate = (title, route) => {
-  return `
-    <li>
-      <a href="${route}">${title}</a>
-    </li>
-  `
-}
+const routeTemplate = (title, route) => `<li><a href="${route}">${title}</a></li>`
+
+
 
 $passwordIcon.addEventListener('click', e => {
   e.preventDefault()

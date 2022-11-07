@@ -1,0 +1,370 @@
+.regist-container {
+   display: flex;
+   justify-content: center;
+   max-width: 100%;
+   margin: auto;
+   padding: 0 2rem;
+   flex: 1 1 auto;
+
+   @media (max-width: 769px) {
+      padding: 0 1rem;
+   }
+
+   @media (max-width: 426px) {
+      flex: 1 1 auto;
+      padding: 0rem;
+      margin: 0;
+   }
+
+   .regist-container-inner {
+      @extend %extend-general-width;
+      height: 873px;
+      background-size: cover;
+      background: url('/assets/images/banner.svg') no-repeat;
+      border-radius: 24px;
+      padding: 3.9rem 4rem;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width:1441px) {
+         width: 100%;
+      }
+
+      @media (max-width:769px) {
+         padding: 3rem 2rem;
+      }
+
+      @media (max-width:671px) {
+         height: auto;
+         align-items: center;
+         padding: 1rem;
+      }
+
+      @media (max-width:426px) {
+         width: 100%;
+         height: auto;
+         padding: 0;
+         background: transparent;
+      }
+
+      .inner-text {
+         width: 245px;
+         color: black;
+
+         p {
+            font-size: 30px;
+            font-weight: 600;
+
+         }
+
+         span {
+            font-size: 20px;
+            font-weight: 500;
+         }
+
+         @media (max-width:671px) {
+            display: none;
+         }
+
+
+      }
+
+      .auth-block-container {
+         @extend %extend-displayCR;
+         width: 90.3%;
+         height: 621px;
+         margin-top: 48px;
+
+         @media (max-width:769px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         @media (max-width:671px) {
+            width: 100%;
+            height: auto;
+            padding: 0;
+         }
+
+         @media (max-width:426px) {
+            width: 100%;
+            height: auto;
+            padding: 0;
+         }
+
+         .auth-block {
+            display: flex;
+            flex-direction: column;
+            width: 696px;
+            height: 100%;
+            border-radius: 16px;
+            padding: 1.45rem;
+            background-color: white;
+
+            @media (max-width:769px) {
+               width: 100%;
+               height: 100%;
+
+            }
+
+            @media (max-width:426px) {
+               height: 100%;
+               justify-content: flex-start;
+               padding: 0 1rem;
+            }
+
+            .auth-heading {
+               height: 58px;
+
+               h2 {
+                  font-size: 20px;
+                  font-weight: 800;
+                  line-height: 30px;
+                  margin-top: 4px;
+
+                  @media (max-width:321px) {
+                     font-size: 18px;
+                  }
+               }
+
+               p {
+                  font-size: 13px;
+                  margin-top: 8px;
+                  font-weight: 500;
+
+                  a {
+                     color: #054EDB;
+                     font-weight: 500;
+                     margin-left: 4px;
+                  }
+               }
+            }
+
+            .auth-form {
+               width: 100%;
+               height: 340px;
+               display: flex;
+               justify-content: space-between;
+               align-items: flex-start;
+               gap: 10px;
+               margin-top: 22px;
+
+               @media (max-width:671px) {
+                  height: auto;
+                  flex-direction: column;
+                  align-items: center;
+
+               }
+
+               @media (max-width:426px) {
+                  width: 100%;
+               }
+
+               .left-side-regist-form,
+               .right-side-regist-form {
+                  height: 340px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  @media (max-width:671px) {
+                     width: 100%;
+                     height: auto;
+                     align-items: center;
+                     background-color: white;
+                  }
+
+                  .form-block {
+                     width: 316px;
+                     height: 70px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-around;
+
+                     @media (max-width:671px) {
+                        margin: 4px 0;
+                     }
+
+                     @media (max-width:769px) {
+                        width: 100%;
+                        height: auto;
+                     }
+
+                     .regist-form-select {
+                        @extend %extend-auth-input;
+                        font-size: 13px;
+
+                        &.date {
+                           width: 164px;
+                           padding: 12px 12px;
+                        }
+
+                     }
+
+                     label {
+                        font-size: 13px;
+                        color: #8B96B1;
+
+                        @media (max-width:671px) {
+                           display: none;
+                        }
+                     }
+
+                     .auth-input {
+                        @extend %extend-auth-input;
+                        width: 316px;
+
+                        @media (max-width:769px) {
+                           width: 100%;
+                        }
+
+                        &::placeholder {
+                           color: #8B96B1;
+                           font-size: 13px;
+                        }
+
+                        &.date {
+                           display: flex;
+                           width: 72px;
+                           padding: 12px 16px;
+
+                           &:last-child {
+                              padding: 12px 20px;
+                           }
+
+                           @media (max-width:426px) {
+                              width: 100%;
+
+                           }
+                        }
+
+                        &.city {
+                           width: 186px;
+                        }
+
+                        &.sex {
+                           width: 121px;
+                        }
+                     }
+
+                     div {
+                        display: flex;
+                        gap: 4px;
+
+                        @media (max-width:426px) {
+                           justify-content: space-between;
+
+                        }
+                     }
+                  }
+               }
+
+
+               .password-block {
+                  position: relative;
+                  width: 100%;
+
+                  .password-icon {
+                     position: absolute;
+                     cursor: pointer;
+                     right: 20px;
+                     top: 40px;
+
+                     @media (max-width:769px) {
+                        top: 30px;
+                     }
+
+                     @media (max-width:671px) {
+                        top: auto;
+                     }
+
+                     &.hide {
+                        display: none;
+                        top: 35px;
+                     }
+
+                     &.hide.show {
+                        display: block;
+                        opacity: 0.2;
+                     }
+                  }
+               }
+
+               // .auth-btn {
+               //    @extend %extend-auth-input;
+               //    background-color: black;
+               //    color: white;
+               //    border: 0;
+               //    cursor: pointer;
+               //    transition: 0.3s;
+
+               //    @media (max-width:769px) {
+               //       width: 100%;
+               //    }
+               //     &:hover {
+               //       opacity: 0.8;
+               //    }
+               // }
+            }
+
+            .regist-handler-block {
+               @extend %extend-displayCenter;
+               width: 100%;
+               height: 100%;
+               margin-top: 10px;
+
+               .regist-handler {
+                  @extend %extend-displayCenter;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  width: 315px;
+                  height: 100%;
+                  padding: 1.2rem 0 0.7rem 0;
+
+                  @media (max-width:769px) {
+                     width: 100%;
+                  }
+
+                  @media (max-width:671px) {
+                     gap: 20px;
+                  }
+
+                  label {
+                     @extend %extend-displayCenter;
+                     gap: 8px;
+                     font-size: 13px;
+
+                     .regist-chekbox {
+                        width: 20px;
+                        height: 20px;
+                        accent-color: black;
+                     }
+                  }
+
+                  .regist-handler-btn {
+                     @extend %extend-auth-input;
+                     background-color: black;
+                     border: 1px solid black;
+                     color: white;
+                     font-weight: 500;
+
+                     &:hover {
+                        opacity: 0.8;
+                     }
+                  }
+
+                  p {
+                     font-size: 13px;
+                     color: #8B96B1;
+                  }
+               }
+            }
+
+         }
+
+
+      }
+   }
+}
