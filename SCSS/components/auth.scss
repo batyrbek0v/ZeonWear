@@ -15,12 +15,22 @@
   margin: auto;
   padding: 1.5rem 5.2rem;
 
+  @media (max-width: 1024px) {
+    padding: 1.5rem 2rem;
+  }
+
+  @media (max-width: 769px) {
+    height: 60px;
+    justify-content: start;
+    padding: 1rem 1.4rem;
+  }
+
   p {
     font-size: 20px;
     font-weight: 600;
     margin-top: 6px;
 
-    @media (max-width:426px) {
+    @media (max-width:769px) {
       display: none;
     }
   }
@@ -42,6 +52,10 @@
       margin-top: 6px;
     }
 
+    @media (max-width:769px) {
+      display: none;
+    }
+
     @media (max-width:426px) {
       display: none;
     }
@@ -61,14 +75,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
-    padding: 1.5rem 2rem;
-  }
 
-  @media (max-width: 769px) {
-    justify-content: space-between;
-    padding: 1.5rem 1.4rem;
-  }
 }
 
 
@@ -301,6 +308,7 @@
   @media (max-width:426px) {
     margin: 0;
     background-color: transparent;
+    padding: 0;
   }
 
   .nav-bottom-block {
@@ -319,11 +327,10 @@
     }
 
     @media (max-width:426px) {
-      justify-content: flex-end;
-      flex-direction: row-reverse;
       border-radius: 0;
-      box-shadow: 0;
+      box-shadow: none;
       background-color: transparent;
+      padding: 0;
     }
 
     .nav-bottom-input-block {
@@ -453,6 +460,7 @@
       }
 
       @media (max-width:426px) {
+        width: 100%;
         align-items: center;
         justify-content: space-between;
       }
@@ -471,22 +479,22 @@
             width: 25px;
           }
 
+          @media (max-width:375px) {
+            width: 20px;
+          }
         }
 
-        &.burger {
-          @media (max-width:769px) {
-            display: none;
-          }
+        &.mobile {
+          display: none;
 
           @media (max-width:426px) {
             display: block;
           }
-        }
 
-        &.mobileSearch {
           img {
             width: 20px;
           }
+
         }
 
         &.lineR {
@@ -498,7 +506,7 @@
         }
 
         &:last-child {
-          @media (max-width:769px) {
+          @media (max-width:426px) {
             display: none;
           }
         }
