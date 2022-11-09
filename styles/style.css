@@ -53,9 +53,11 @@ a {
   width: 1856px;
 }
 
-html,
-body {
-  height: 100%;
+@media (max-width: 426px) {
+  html,
+  body {
+    height: 100%;
+  }
 }
 
 .nav {
@@ -65,7 +67,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   margin: auto;
-  padding: 1.5rem 5.2rem;
+  padding: 1.5rem 6rem;
 }
 @media (max-width: 1024px) {
   .nav {
@@ -342,7 +344,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  margin-bottom: 40px;
   padding: 0rem 2rem;
 }
 @media (max-width: 1441px) {
@@ -480,6 +481,11 @@ body {
   color: #171717;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.3s;
+}
+.nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li a:hover,
+.nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li a:hover {
+  color: #DD2C28;
 }
 @media (max-width: 1024px) {
   .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li a,

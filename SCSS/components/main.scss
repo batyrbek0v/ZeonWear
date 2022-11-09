@@ -3,9 +3,9 @@ body {
 }
 
 
-// .nav {
-// 	padding: 1.5rem 6rem;
-// }
+.nav {
+	padding: 1.5rem 6rem;
+}
 
 .container {
 	display: flex;
@@ -266,7 +266,7 @@ body {
 	}
 }
 
-.nav-container {
+.container {
 	@media (max-width:426px) {
 		margin-top: 20px;
 		background-color: white;
@@ -275,6 +275,7 @@ body {
 		box-shadow: 8px 0px 33px -13px #00000026;
 		z-index: 1;
 	}
+
 }
 
 // FOOTER
@@ -284,7 +285,8 @@ body {
 	width: 100%;
 	padding: 0 2rem;
 	margin-top: 18px;
-margin-bottom: 20px;
+	margin-bottom: 20px;
+
 	@media (max-width:769px) {
 		padding: 0 1rem;
 	}

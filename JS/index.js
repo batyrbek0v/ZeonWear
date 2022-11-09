@@ -22,7 +22,7 @@ const navRoutes = [
 	{
 		id: 3,
 		title: 'Мужчинам',
-		route: '/men'
+		route: './pages/men.html'
 	},
 	{
 		id: 4,
@@ -127,7 +127,6 @@ window.addEventListener('load', () => {
 
 
 const categoryTemplate = title => `<button class="main-category-btn">${title}</button>`
-
 const brandTemplate = url => `<div><img src="${url}" alt="brand"></div>`
 const routeTemplate = (title, route) => `<li><a href="${route}">${title}</a></li>`
 

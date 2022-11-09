@@ -69,7 +69,7 @@ a {
   justify-content: flex-end;
   align-items: flex-start;
   margin: auto;
-  padding: 1.5rem 5.2rem;
+  padding: 1.5rem 6rem;
 }
 @media (max-width: 1024px) {
   .nav {
@@ -346,7 +346,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  margin-bottom: 40px;
   padding: 0rem 2rem;
 }
 @media (max-width: 1441px) {
@@ -484,6 +483,11 @@ a {
   color: #171717;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.3s;
+}
+.nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li a:hover,
+.nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li a:hover {
+  color: #DD2C28;
 }
 @media (max-width: 1024px) {
   .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li a,
@@ -573,7 +577,6 @@ a {
   max-width: 100%;
   margin: auto;
   padding: 0 2rem;
-  flex: 1 1 auto;
 }
 @media (max-width: 769px) {
   .regist-container {
@@ -772,6 +775,7 @@ a {
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .regist-form-select,
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .right-side-regist-form .form-block .regist-form-select {
   font-size: 13px;
+  background-color: white;
 }
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .regist-form-select.date,
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .right-side-regist-form .form-block .regist-form-select.date {

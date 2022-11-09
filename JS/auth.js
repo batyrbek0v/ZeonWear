@@ -24,7 +24,7 @@ const navRoutes = [
   {
     id: 3,
     title: 'Мужчинам',
-    route: '/men'
+    route: '/pages/men'
   },
   {
     id: 4,

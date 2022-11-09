@@ -450,6 +450,11 @@ main {
             color: #171717;
             font-size: 18px;
             font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+              color: #DD2C28;
+            }
 
             @media (max-width:1024px) {
               font-size: 14px;
