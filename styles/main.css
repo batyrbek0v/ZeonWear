@@ -51,7 +51,7 @@ a {
   font-size: 14px;
 }
 
-.regist-container .regist-container-inner, .nav-container .nav-bottom-block, .container .container-inner {
+.footer-container .footer_container-inner .footer-nav, .footer-container .footer_container-inner, .regist-container .regist-container-inner, .nav-container .nav-bottom-block, .container .container-inner {
   width: 1856px;
 }
 
@@ -346,7 +346,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  margin-bottom: 40px;
   padding: 0rem 2rem;
 }
 @media (max-width: 1441px) {
@@ -922,7 +921,6 @@ body {
   justify-content: center;
   margin: auto;
   padding: 0rem 2rem;
-  flex: 1 1 auto;
 }
 @media (max-width: 426px) {
   .container {
@@ -930,25 +928,91 @@ body {
   }
 }
 .container .container-inner {
+  width: 100%;
   max-height: 75vh;
   background: transparent;
   margin-top: 20px;
   align-items: center;
   padding: 0;
 }
+@media (max-width: 426px) {
+  .container .container-inner {
+    max-height: fit-content;
+  }
+}
 .container .container-inner .swiper {
-  width: 240px;
-  height: 320px;
+  max-width: 1600px;
+  height: 590px;
+  background-color: transparent;
+}
+@media (max-width: 1441px) {
+  .container .container-inner .swiper {
+    width: 100%;
+    height: 800px;
+  }
+}
+@media (max-width: 426px) {
+  .container .container-inner .swiper {
+    display: none;
+  }
 }
 .container .container-inner .swiper .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  width: 250px;
+  height: 400px;
+  margin: 50px 0;
+  opacity: 0.5;
+  border-radius: 16px;
   filter: grayscale(1);
+  transition: 1s;
+}
+.container .container-inner .swiper .swiper-slide a img {
+  width: auto !important;
+  width: 100%;
+  object-fit: cover;
+}
+.container .container-inner .swiper .swiper-slide-prev,
+.container .container-inner .swiper .swiper-slide-next {
+  width: 292px;
+  height: 466px;
+  opacity: 1;
+  filter: grayscale(1);
+}
+.container .container-inner .swiper .swiper-pagination-bullet {
+  background-color: black;
+}
+.container .container-inner .swiper .swiper-slide-active {
+  width: 594px;
+  height: 466px;
+  opacity: 1;
+  position: relative;
+  filter: none;
+}
+.container .container-inner .swiper .swiper-slide-active img {
+  width: 100%;
+}
+.container .container-inner .swiper .swiper-slide-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 91%;
+  height: 99.9%;
+  background: rgba(255, 24, 24, 0.8666666667);
+  border-radius: 16px;
+  opacity: 0;
+  transition: 0.4s ease-in;
+  mix-blend-mode: color-burn;
+}
+.container .container-inner .swiper .swiper-slide-active:hover:after {
+  opacity: 1;
+}
+.container .container-inner .mobile-slider-block {
+  display: none;
+}
+@media (max-width: 426px) {
+  .container .container-inner .mobile-slider-block {
+    display: block;
+  }
 }
 .container .container-inner .main-category-block {
   display: flex;
@@ -1010,9 +1074,9 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 426px) {
   .container .container-inner .main-brand-block {
-    padding: 0 1rem;
+    padding: 0 12px;
   }
 }
 .container .container-inner .main-brand-block .main-brand-wrapper {
@@ -1031,6 +1095,12 @@ body {
   .container .container-inner .main-brand-block .main-brand-wrapper {
     justify-content: center;
     gap: 8px;
+  }
+}
+@media (max-width: 426px) {
+  .container .container-inner .main-brand-block .main-brand-wrapper {
+    justify-content: space-evenly;
+    gap: 0;
   }
 }
 @media (max-width: 769px) {
@@ -1078,6 +1148,90 @@ body {
 }
 .container .container-inner .bullet-block .main-slider-bullets:not(:first-child) {
   background-color: #C4C4C4;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 2rem;
+  margin-top: 18px;
+}
+.footer-container .footer_container-inner {
+  height: 316px;
+  background-color: white;
+  border-radius: 24px;
+  padding: 48px 0 48px 64px;
+}
+.footer-container .footer_container-inner .footer-nav {
+  width: 72.5%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list li {
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list li a {
+  color: #171717;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #171717;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list h2 {
+  font-size: 22px;
+  font-size: 600;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list .footer-icon-list {
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list .footer-icon-list li {
+  width: 32px;
+  height: 32px;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list .footer-icon-list li img {
+  width: 100%;
+  height: 100%;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(2) {
+  width: 222px;
+  height: 108px;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(2) li {
+  line-height: 150%;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(3) {
+  width: 124px;
+  height: 124px;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(3) li a {
+  line-height: 17px;
+  color: #171717;
+  font-size: 14px;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(4) {
+  width: 340px;
+  height: 46px;
+  background-color: white;
+}
+.footer-container .footer_container-inner .footer-nav .footer-list:nth-child(4) li a {
+  color: #032d80;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
