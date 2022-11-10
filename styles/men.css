@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-.men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
 .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li {
   display: flex;
   justify-content: center;
@@ -1405,7 +1405,7 @@ body {
 }
 
 .nav {
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 5.4rem;
 }
 @media (max-width: 769px) {
   .nav {
@@ -1421,7 +1421,7 @@ body {
 .men-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 0 5.4rem;
 }
 @media (max-width: 1441px) {
   .men-container {
@@ -1436,7 +1436,7 @@ body {
   }
 }
 .men-container #men-sidebar {
-  background-color: red;
+  background-color: white;
   width: 334px;
   height: 1440px;
   border-radius: 16px;
@@ -1660,6 +1660,108 @@ body {
 }
 .men-container .men-rightSide .men-rightSide-top-sort-block.mobile .men-rightSide-top-sort-box p {
   font-size: 12px;
+}
+.men-container .men-rightSide .men-template-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  height: 1421px;
+  margin-top: 23px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block {
+  display: flex;
+  flex-direction: column;
+  width: 346px;
+  height: 463px;
+  border-radius: 16px;
+  border: 1px solid #EAF1FF;
+  position: relative;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 5px 0 13px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top .notNew {
+  display: none;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 5px 0 13px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block {
+  width: 40px;
+  height: 24px;
+  background-color: #171717;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-image {
+  width: 346px;
+  height: 346;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-description h1 {
+  font-size: 16px;
+  color: #171717;
+  font-weight: 600;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-description p {
+  color: #8B96B1;
+  font-size: 14px;
+  font-weight: 400;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 159px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-price strong {
+  color: #171717;
+  font-weight: 600;
+  font-size: 15px;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-price span {
+  color: #8B96B1;
+  font-size: 15px;
+  font-weight: 500;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale span {
+  color: #8B96B1;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .footer-container {
