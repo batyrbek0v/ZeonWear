@@ -1,6 +1,8 @@
 // DOM-ELEMENTS
 const $categoryWrapper = document.querySelector('.main-category-block')
 const $templateContainer = document.querySelector('.men-template-container')
+const $menFilterWrapper = document.querySelector('.men-filter-list-wrapper')
+const $menFilterColorWrapper = document.querySelector('.men-filter-color-wrapper')
 // DOM-ELEMENTS
 
 
@@ -189,11 +191,114 @@ const clotheBase = [
   },
 ]
 
+const filterList = [
+  {
+    listTitle: 'Категория',
+    list: [
+      {
+        id: 1,
+        list: 'Футболка',
+      },
+      {
+        id: 2,
+        list: 'Шорты',
+      },
+      {
+        id: 3,
+        list: 'Трико',
+      },
+      {
+        id: 4,
+        list: 'Обувь',
+      },
+      {
+        id: 6,
+        list: 'Спортивка',
+      },
+      {
+        id: 7,
+        list: 'Головной убор',
+      },
+    ]
+  },
+  {
+    listTitle: 'Виды спорта',
+    list: [
+      {
+        id: 1,
+        list: 'Футбол',
+      },
+      {
+        id: 2,
+        list: 'Мини-футбол',
+      },
+      {
+        id: 3,
+        list: 'Волейбол',
+      },
+      {
+        id: 4,
+        list: 'Легкая атлетика',
+      },
+      {
+        id: 6,
+        list: 'Гандбол',
+      },
+      {
+        id: 7,
+        list: 'Фитнес',
+      },
+      {
+        id: 8,
+        list: 'Регби',
+      },
+      {
+        id: 9,
+        list: 'Йога',
+      },
+    ]
+  },
+
+]
+
+const filterColor = [
+  {
+    HEX: '#171717'
+  },
+  {
+    HEX: '#1D9F22'
+  },
+  {
+    HEX: '#FD9B08'
+  },
+  {
+    HEX: '#FFFFFF'
+  },
+  {
+    HEX: '#C398F9'
+  },
+  {
+    HEX: '#B5CAF0'
+  },
+  {
+    HEX: '#BEA461'
+  },
+  {
+    HEX: '#1D889F'
+  },
+  {
+    HEX: '#B4AEA5'
+  },
+]
 
 window.addEventListener('load', () => {
   const template = category.map(({ title }) => categoryTemplate(title)).join('')
+
   $categoryWrapper.innerHTML = template
+
   menClotheTemplate(clotheBase)
+  menFilterListTemplate(filterList)
+  menFilterColorTemplate(filterColor)
 
 })
 
@@ -244,6 +349,35 @@ const menClotheTemplate = (clothe) => {
    </div>
   `
   ).join('')
-  
+
   $templateContainer.innerHTML = template
+}
+
+const menFilterListTemplate = (menList) => {
+  const template = menList.map(({ listTitle, list }) =>
+    `
+      <div class="men-sidebar-filter-list">
+        <div class="men-sidebar-filter-title">
+          <h1>${listTitle}</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        ${list.map(item =>
+      `
+        <label>
+          <input type="checkbox" class="men-filter-checkbox">
+          ${item.list}
+        </label>
+      `).join('')}
+      </div >
+    `
+  ).join('')
+
+  $menFilterWrapper.innerHTML = template
+}
+
+const menFilterColorTemplate = (color) => {
+  const template = color.map(({ HEX }) => `
+    <div class="men-filter-color" style="background: ${HEX} ;"></div>
+  `).join('')
+  $menFilterColorWrapper.innerHTML = template
 }

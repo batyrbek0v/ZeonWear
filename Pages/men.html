@@ -28,7 +28,105 @@
   <main>
     <div class="men-container">
       <aside id="men-sidebar">
-
+        <div class="men-sidebar-filter-block">
+          <div class="men-filter-list-wrapper">
+            <!-- КАТЕГОРИИ И ЛИСТЫ РЕНЕДРЯТСЯ В JS -->
+          </div>
+          <div class="men-filter-search-block">
+            <div class="men-sidebar-filter-title">
+              <h1>Бренд</h1>
+              <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+            </div>
+            <label>
+              <input type="search" class="men-filter-search" placeholder="Я ищу...">
+            </label>
+          </div>
+          <div class="men-filter-search-block">
+            <div class="men-sidebar-filter-title">
+              <h1>Цена</h1>
+              <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+            </div>
+            <div class="men-filter-sort-block">
+              <div class="left-sort">
+                <label>
+                  Oт
+                  <input type="text">
+                </label>
+              </div>
+              <div class="right-sort">
+                <label>
+                  До
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="men-filter-search-block">
+            <div class="men-sidebar-filter-title">
+              <h1>Размер</h1>
+              <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+            </div>
+            <div class="men-filter-size-block">
+              <div class="men-filter-size-countries">
+                <div>
+                  <span class="active">EU</span>
+                </div>
+                <div><span>US</span></div>
+                <div><span>JP</span></div>
+                <div><span>RU</span></div>
+              </div>
+              <div class="men-filter-size-btns">
+                <button>XXL</button>
+                <button>XL</button>
+                <button>L</button>
+                <button>M</button>
+                <button>S</button>
+              </div>
+              <p>Таблица размеров</p>
+            </div>
+          </div>
+          <div class="men-filter-search-block">
+            <div class="men-sidebar-filter-title">
+              <h1>Материал</h1>
+              <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+            </div>
+            <div class="men-sidebar-filter-list">
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Искусcтвенная кожа
+              </label>
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Натуральная замша
+              </label>
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Натуральная кожа
+              </label>
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Натуральный нубук
+              </label>
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Нубук
+              </label>
+              <label>
+                <input type="checkbox" class="men-filter-checkbox">
+                Полиуретан
+              </label>
+            </div>
+          </div>
+          <div class="men-filter-search-block">
+            <div class="men-sidebar-filter-title">
+              <h1>Цвет</h1>
+              <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+            </div>
+            <div class="men-filter-color-wrapper">
+              <!-- БЛОКИ С ЦВЕТАМИ РЕНДЕРЯТСЯ В JS  -->
+            </div>
+          </div>
+        </div>
       </aside>
       <div class="men-rightSide">
         <div class="men-rightSide-top">
@@ -55,11 +153,8 @@
             <p>Сортировка</p>
           </div>
         </div>
-        <div>
-
-          <div class="men-template-container">
-            <!-- ТОВАРЫ РЕНДЕРЯТСЯ С ПОМОЩЬЮ JS -->
-          </div>
+        <div class="men-template-container">
+          <!-- ТОВАРЫ РЕНДЕРЯТСЯ С ПОМОЩЬЮ JS -->
         </div>
       </div>
     </div>
