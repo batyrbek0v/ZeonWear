@@ -1,0 +1,150 @@
+.special-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width:1441px) {
+    width: 100%;
+  }
+
+  .men-rightSide{
+    &.special{
+      height: auto;
+    }
+  }
+
+
+  .special-banner {
+    width: 100%;
+    height: 218px;
+    background: url('/assets/images/special-banner-image.svg');
+    background-repeat: no-repeat;
+    border-radius: 16px;
+
+    @media (max-width:1441px) {
+      background-position: top;
+    }
+
+    @media (max-width:769px) {
+      border-radius: 0;
+    }
+
+    @media (max-width:426px) {
+      width: 100%;
+      height: 200px;
+      border-end-end-radius: 16px;
+      border-end-start-radius: 16px;
+    }
+
+
+    .special-banner-content {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4rem;
+
+      @media (max-width:1441px) {
+        padding: 0 2rem;
+
+      }
+
+      @media (max-width:426px) {
+        width: auto;
+        padding: 0 8px;
+        align-items: end;
+      }
+
+      h1 {
+        font-weight: 200;
+        font-size: 32px;
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+        line-height: 39px;
+        color: white;
+
+        @media (max-width:1025px) {
+          width: 50%;
+          font-size: 28px;
+        }
+
+        @media (max-width:426px) {
+          width: 70%;
+          font-size: 24px;
+        }
+
+        @media (max-width:321px) {
+          width: auto;
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 28px;
+
+          @media (max-width:1025px) {
+            font-size: 20px;
+          }
+
+          @media (max-width:321px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      div {
+        height: 108px;
+        width: 319px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 6px 0 1rem 2px;
+
+        @media (max-width:1441px) {
+          width: auto;
+          padding: 1rem 0;
+        }
+
+        @media (max-width:426px) {
+          display: none;
+        }
+
+        h1 {
+          color: #2f2e2c;
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: 0.355em;
+
+          @media (max-width:1025px) {
+            letter-spacing: 0.200em;
+          }
+
+          &:last-child {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 0.87em;
+
+            @media (max-width:1025px) {
+              letter-spacing: 0.67em;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .men-rightSide {
+    .men-rightSide-top {
+      &.special {
+        justify-content: start;
+        gap: 12px;
+      }
+    }
+
+    .main-category-block {
+      &.special {
+        display: none;
+      }
+    }
+  }
+}
