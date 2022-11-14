@@ -26,7 +26,7 @@
     </nav>
   </header>
   <main>
-    <div class="men-container">
+    <div class="men-container special">
       <aside id="men-sidebar">
         <div class="men-sidebar-filter-block">
           <div class="men-filter-list-wrapper">
@@ -76,11 +76,20 @@
                 <div><span>RU</span></div>
               </div>
               <div class="men-filter-size-btns">
-                <button>XXL</button>
-                <button>XL</button>
-                <button>L</button>
-                <button>M</button>
-                <button>S</button>
+                <button>38</button>
+                <button>39</button>
+                <button>40</button>
+                <button>40,5</button>
+                <button>41</button>
+                <button>42</button>
+                <button>42,5</button>
+                <button>43</button>
+                <button>43,5</button>
+                <button>44</button>
+                <button>44,5</button>
+                <button>45</button>
+                <button>46</button>
+                <button>47</button>
               </div>
               <p>Таблица размеров</p>
             </div>
@@ -128,6 +137,7 @@
           </div>
         </div>
       </aside>
+      <div class="filter-modal-mobile"></div>
       <div class="special-container">
         <div class="special-banner">
           <div class="special-banner-content">
@@ -148,19 +158,29 @@
                 <p>Главная /</p>
                 <p>Коллекция "лето" </p>
               </div>
+              <div class="men-rightSide-top-sort-box">
+                <img src="/assets/icons/men-arrow-down.svg" alt="arrow-down-icon" class="show-modal">
+                <p>Сортировка</p>
+              </div>
             </div>
+          </div>
+          <div class="men-right-side-top-modal">
+            <!-- МОДАЛКА РЕНДЕРИТСЯ С ПОМОЩЬЮ JS -->
           </div>
           <div class="main-category-block special">
             <!-- КНОПКИ НЕ РЕНДЕРЯТСЯ !!! -->
           </div>
           <div class="men-rightSide-top-sort-block mobile">
-            <div class="men-rightSide-top-sort-box mobile">
+            <div class="men-rightSide-top-sort-box mobile show-filter-modal-mobile">
               <img src="/assets/icons/filter.svg" alt="arrow-down-icon">
               <p>Фильтры</p>
             </div>
-            <div class="men-rightSide-top-sort-box">
+            <div class="men-rightSide-top-sort-box show-sort-modal-mobile">
               <img src="/assets/icons/men-arrow-down.svg" alt="arrow-down-icon">
               <p>Сортировка</p>
+            </div>
+            <div class="men-right-side-top-modal-mobile">
+              <!-- МОДАЛКА РЕНДЕРИТСЯ С ПОМОЩЬЮ JS -->
             </div>
           </div>
           <div class="men-template-container">
@@ -248,6 +268,7 @@
       </div>
     </div>
   </footer>
+
   <script src="/JS/men.js"></script>
 </body>
 

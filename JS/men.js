@@ -3,6 +3,12 @@ const $categoryWrapper = document.querySelector('.main-category-block')
 const $templateContainer = document.querySelector('.men-template-container')
 const $menFilterWrapper = document.querySelector('.men-filter-list-wrapper')
 const $menFilterColorWrapper = document.querySelector('.men-filter-color-wrapper')
+const $menFilterPopUpMobile = document.querySelector('.filter-modal-mobile')
+const $showModalBtn = document.querySelector('.show-modal')
+const $showModalMobile = document.querySelector('.show-sort-modal-mobile')
+const $sortModal = document.querySelector('.men-right-side-top-modal')
+const $sortModalMobile = document.querySelector('.men-right-side-top-modal-mobile')
+const $showFilterMobile = document.querySelector('.show-filter-modal-mobile')
 // DOM-ELEMENTS
 
 
@@ -381,3 +387,200 @@ const menFilterColorTemplate = (color) => {
   `).join('')
   $menFilterColorWrapper.innerHTML = template
 }
+
+const modalTemplate = () => {
+  const template = `
+  <p>Сортировать по:</p>
+  <label>
+    <input type="radio" name="sorting">
+    Популярность
+  </label>
+  <label>
+    <input type="radio" name="sorting">
+    Цене
+  </label>
+  <label>
+    <input type="radio" name="sorting">
+    Новинкам
+  </label>
+  <label>
+    <input type="radio" name="sorting">
+    Скидкам
+  </label>
+  <label>
+    <input type="radio" name="sorting">
+    Рекомендованные
+  </label>
+  `
+  $sortModal.innerHTML = template
+  $sortModalMobile.innerHTML = template
+}
+
+const filterMobilePopUpTemplate = (HEX, filterList) => {
+
+  const template =
+    `
+    <div class="men-sidebar-filter-block">
+      <div class="close-filter-modal">
+        <img src="/assets/icons/closeFilterModal.svg" alt="splash icon" onclick="closeMobileFilterPopUp()">
+        <p>Фильтры</p>
+      </div>
+      <div class="men-filter-list-wrapper">
+        ${filterList.map(({ listTitle, list }) => `
+          <div class="men-sidebar-filter-list">
+              <div class="men-sidebar-filter-title">
+                <h1>${listTitle}</h1>
+                <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+              </div>
+              ${list.map(item => `
+                <label>
+                  <input type="checkbox" class="men-filter-checkbox">
+                  ${item.list}
+                </label>
+            `).join('')}
+          </div >
+        `).join('')}
+      </div>
+      <div class="men-filter-block">
+        <div class="men-sidebar-filter-title">
+          <h1>Бренд</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        <label>
+          <input type="search" class="men-filter-search" placeholder="Я ищу...">
+        </label>
+      </div>
+      <div class="men-filter-block">
+        <div class="men-sidebar-filter-title">
+          <h1>Цена</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        <div class="men-filter-sort-block">
+          <div class="left-sort">
+            <label>
+              Oт
+              <input type="text">
+            </label>
+          </div>
+          <div class="right-sort">
+            <label>
+              До
+              <input type="text">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="men-filter-block">
+        <div class="men-sidebar-filter-title">
+          <h1>Размер</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        <div class="men-filter-size-block">
+          <div class="men-filter-size-countries">
+            <div>
+              <span class="active">EU</span>
+            </div>
+            <div><span>US</span></div>
+            <div><span>JP</span></div>
+            <div><span>RU</span></div>
+          </div>
+          <div class="men-filter-size-btns">
+            <button>38</button>
+            <button>39</button>
+            <button>40</button>
+            <button>40,5</button>
+            <button>41</button>
+            <button>42</button>
+            <button>42,5</button>
+            <button>43</button>
+            <button>43,5</button>
+            <button>44</button>
+            <button>44,5</button>
+            <button>45</button>
+            <button>46</button>
+            <button>47</button>
+          </div>
+          <p>Таблица размеров</p>
+        </div>
+      </div>
+      <div class="men-filter-list-wrapper">
+        <div class="men-sidebar-filter-title second">
+          <h1>Материал</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        <div class="men-sidebar-filter-list">
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Искусcтвенная кожа
+          </label>
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Натуральная замша
+          </label>
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Натуральная кожа
+          </label>
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Натуральный нубук
+          </label>
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Нубук
+          </label>
+          <label>
+            <input type="checkbox" class="men-filter-checkbox">
+            Полиуретан
+          </label>
+        </div>
+      </div>
+      <div class="men-filter-block">
+        <div class="men-sidebar-filter-title">
+          <h1>Цвет</h1>
+          <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
+        </div>
+        <div class="men-filter-color-wrapper">
+          ${HEX.map(({ HEX }) => `
+            <div class="men-filter-color" style="background: ${HEX} ;"></div>
+          `).join('')}
+        </div>
+      </div>
+    
+    </div>
+    <div class="filter-mobile-bottom-btn">
+      <button onclick="closeMobileFilterPopUp()">Применить</button>
+    </div>
+    `
+
+  $menFilterPopUpMobile.innerHTML = template
+}
+
+
+const closeMobileFilterPopUp = () => {
+  $menFilterPopUpMobile.classList.remove('showFilterPopUpMobile')
+}
+
+
+
+$showModalBtn.addEventListener('click', e => {
+  e.preventDefault()
+  modalTemplate()
+
+  $sortModal.classList.toggle('showingModal')
+})
+
+$showModalMobile.addEventListener('click', e => {
+  e.preventDefault()
+  $showModalMobile.classList.toggle('active')
+  $sortModalMobile.classList.toggle('showModalMobile')
+  modalTemplate()
+})
+
+$showFilterMobile.addEventListener('click', e => {
+  e.preventDefault()
+
+  $menFilterPopUpMobile.classList.toggle('showFilterPopUpMobile')
+
+  filterMobilePopUpTemplate(filterColor, filterList)
+})

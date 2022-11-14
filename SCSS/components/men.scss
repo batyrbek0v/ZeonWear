@@ -64,7 +64,7 @@
           flex-direction: column;
           gap: 20px;
 
-          &:not(:first-child) {
+          &:nth-child(2) {
             margin-top: 35px;
           }
 
