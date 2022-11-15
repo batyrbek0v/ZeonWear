@@ -9,6 +9,10 @@ const $showModalMobile = document.querySelector('.show-sort-modal-mobile')
 const $sortModal = document.querySelector('.men-right-side-top-modal')
 const $sortModalMobile = document.querySelector('.men-right-side-top-modal-mobile')
 const $showFilterMobile = document.querySelector('.show-filter-modal-mobile')
+const $showClothesSize = document.querySelector('.show-clothes-size')
+const $clothesSizeTable = document.querySelector('.clothes-size-table')
+const $clothesSizeСontainer = document.querySelector('.clothes-size-container')
+const $body = document.querySelector('body')
 // DOM-ELEMENTS
 
 
@@ -297,6 +301,217 @@ const filterColor = [
   },
 ]
 
+const clotheSize = [
+  {
+    sizes: [
+      {
+        size: '36',
+      },
+      {
+        size: '37',
+      },
+      {
+        size: '37.5',
+      },
+      {
+        size: '38',
+      },
+      {
+        size: '39',
+      },
+      {
+        size: '40'
+      },
+      {
+        size: '40.5',
+      },
+      {
+        size: '41',
+      },
+      {
+        size: '42',
+      },
+      {
+        size: '42.5',
+      },
+      {
+        size: '43',
+      },
+      {
+        size: '43.5',
+      },
+      {
+        size: '44',
+      },
+      {
+        size: '44.5',
+      },
+      {
+        size: '45',
+      },
+      {
+        size: '46',
+      },
+    ]
+  },
+  {
+    sizes: [
+      {
+        size: '4.5',
+      },
+      {
+        size: '5',
+      },
+      {
+        size: '5.5',
+      },
+      {
+        size: '6',
+      },
+      {
+        size: '6.5',
+      },
+      {
+        size: '7',
+      },
+      {
+        size: '7.5'
+      },
+      {
+        size: '8',
+      },
+      {
+        size: '8.5',
+      },
+      {
+        size: '9',
+      },
+      {
+        size: '9.5',
+      },
+      {
+        size: '10',
+      },
+      {
+        size: '10.5',
+      },
+      {
+        size: '11',
+      },
+      {
+        size: '11.5',
+      },
+      {
+        size: '12',
+      },
+    ]
+  },
+  {
+    sizes: [
+      {
+        size: '23',
+      },
+      {
+        size: '23.5',
+      },
+      {
+        size: '24',
+      },
+      {
+        size: '24.5',
+      },
+      {
+        size: '25',
+      },
+      {
+        size: '25.5',
+      },
+      {
+        size: '26'
+      },
+      {
+        size: '26.5',
+      },
+      {
+        size: '27',
+      },
+      {
+        size: '27.5',
+      },
+      {
+        size: '28',
+      },
+      {
+        size: '28.5',
+      },
+      {
+        size: '29',
+      },
+      {
+        size: '30',
+      },
+      {
+        size: '30',
+      },
+      {
+        size: '30.5',
+      },
+    ]
+  },
+  {
+    sizes: [
+      {
+        size: '23',
+      },
+      {
+        size: '23.5',
+      },
+      {
+        size: '24',
+      },
+      {
+        size: '24.5',
+      },
+      {
+        size: '25',
+      },
+      {
+        size: '25.5',
+      },
+      {
+        size: '26'
+      },
+      {
+        size: '26.5',
+      },
+      {
+        size: '27',
+      },
+      {
+        size: '27.5',
+      },
+      {
+        size: '28',
+      },
+      {
+        size: '28.5',
+      },
+      {
+        size: '29',
+      },
+      {
+        size: '30',
+      },
+      {
+        size: '30',
+      },
+      {
+        size: '30.5',
+      },
+    ]
+  },
+]
+
 window.addEventListener('load', () => {
   const template = category.map(({ title }) => categoryTemplate(title)).join('')
 
@@ -305,7 +520,7 @@ window.addEventListener('load', () => {
   menClotheTemplate(clotheBase)
   menFilterListTemplate(filterList)
   menFilterColorTemplate(filterColor)
-
+  clothesSizeTemplate(clotheSize)
 })
 
 
@@ -556,6 +771,28 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
   $menFilterPopUpMobile.innerHTML = template
 }
 
+const clothesSizeTemplate = (sizes) => {
+  const template = `
+  <div class="size-code-block" >
+    <div class="size-code-inner">
+      <div class="sizeCode">EUR</div>
+      <div class="sizeCode">US</div>
+      <div class="sizeCode">CM</div>
+      <div class="sizeCode">UK</div>
+    </div>
+    <div class="sizes-container">
+      ${sizes.map(({ sizes }) => `
+        <div class="sizes-block">
+          ${sizes.map(item => `<div>${item.size}</div>`)
+      .join('')}
+        </div>
+      `).join('')}
+    </div>
+  </div>
+  `
+
+  $clothesSizeTable.innerHTML = template
+}
 
 const closeMobileFilterPopUp = () => {
   $menFilterPopUpMobile.classList.remove('showFilterPopUpMobile')
@@ -583,4 +820,13 @@ $showFilterMobile.addEventListener('click', e => {
   $menFilterPopUpMobile.classList.toggle('showFilterPopUpMobile')
 
   filterMobilePopUpTemplate(filterColor, filterList)
+})
+
+$showClothesSize.addEventListener('click', e => {
+  e.preventDefault()
+
+  $clothesSizeСontainer.classList.toggle('active')
+
+  $body.classList.toggle('blur')
+
 })

@@ -11,12 +11,20 @@
 
 body {
   background-color: #F6F6F6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
   @media (max-width:426px) {
     background-color: white;
   }
+
+
 }
 
-ul,ol{
+ul,
+ol {
   list-style: none;
 }
 

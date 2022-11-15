@@ -1,15 +1,20 @@
 body {
-  @media (max-width:426px) {
-    position: relative;
-  }
+  // &.blur {
+  //   overflow: hidden;
+
+  //   filter: blur(5px);
+  //   -webkit-filter: blur(5px);
+  //   transition: 0.3s;
+  // }
 }
 
 .special {
-
   @media (max-width:426px) {
-    position: absolute;
+    position: relative;
     padding: 0;
   }
+
+
 
   .filter-modal-mobile {
     position: absolute;
@@ -18,12 +23,15 @@ body {
     top: -100%;
     transition: .5s ease-in-out;
     flex-direction: column;
-    width: 100%;
     height: 55%;
     display: flex;
     background-color: white;
     z-index: 3;
     padding-bottom: 0;
+
+    @media (min-width:1441px) {
+      display: none;
+    }
 
     .men-sidebar-filter-block {
       width: 100%;
@@ -31,7 +39,6 @@ body {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      padding-top: 4px;
       padding: 1.5rem;
 
       .close-filter-modal {
@@ -50,6 +57,10 @@ body {
           display: flex;
           gap: 10px;
 
+          &.second {
+            margin-top: 20px;
+          }
+
           h1 {
             font-size: 15px;
             color: black;
@@ -66,8 +77,6 @@ body {
           &:first-child {
             display: none;
           }
-
-
 
           label {
             font-size: 13px;
@@ -98,6 +107,7 @@ body {
         .men-sidebar-filter-title {
           display: flex;
           gap: 10px;
+          margin-top: 20px;
 
           h1 {
             font-size: 15px;
@@ -150,7 +160,8 @@ body {
 
             div {
               width: 34px;
-              cursor: pointer;
+
+
 
               &:not(:last-child) {
                 border-right: 1px solid #98949E;
@@ -161,6 +172,10 @@ body {
                 font-size: 13px;
                 font-weight: 600;
                 color: #8B96B1;
+
+                &:hover {
+                  color: #054EDB;
+                }
 
                 &.active {
                   color: #054EDB;
@@ -185,6 +200,13 @@ body {
               padding: 12px;
               border-radius: 8px;
               color: #171717;
+              transition: 0.2s ease-in-out;
+
+              &:hover {
+                background-color: #054EDB;
+                border: 1px solid #054EDB;
+                color: white;
+              }
             }
           }
 
@@ -210,14 +232,8 @@ body {
             height: 16px;
             border-radius: 4px;
             position: relative;
-            transition: 0.3s;
+            transition: 1s ease-in-out;
 
-            &:first-child {
-              &::before {
-                opacity: 1;
-                visibility: visible;
-              }
-            }
 
             &:nth-child(4) {
               outline: 1px solid #BED1F5;
@@ -229,16 +245,21 @@ body {
               width: 22px;
               height: 22px;
               left: -3px;
-              top: -3px;
-              border: 3px solid #BED1F5;
+              top: -2.5px;
+              border: 1px solid #BED1F5;
               border-radius: 5px;
               opacity: 0;
               visibility: hidden;
+              transition: 1s;
             }
 
             &:hover:before {
               opacity: 1;
               visibility: visible;
+            }
+
+            &:hover {
+              border-radius: 50px;
             }
           }
         }
@@ -310,6 +331,23 @@ body {
               justify-content: space-between;
 
             }
+
+
+
+            button {
+              cursor: pointer;
+              transition: 0.3s;
+
+              &:hover {
+                background-color: #054EDB;
+                color: white;
+                border: 1px solid #054EDB;
+              }
+            }
+          }
+
+          p {
+            cursor: pointer;
           }
         }
       }
@@ -477,6 +515,7 @@ body {
             color: #171717;
             font-size: 14px;
             font-weight: 600;
+
           }
         }
       }
@@ -539,7 +578,6 @@ body {
     .men-rightSide-top-sort-block {
       &.mobile {
         position: relative;
-        margin-top: 70px;
 
         .show-sort-modal-mobile {
           transition: 0.3s ease-in-out;
@@ -610,5 +648,115 @@ body {
 footer {
   .footer-container {
     margin-top: 24px;
+    top: 100%;
+
+    @media (max-width:426px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.clothes-size-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1196px;
+  height: 617px;
+  background-color: white;
+  padding: 48px 36px;
+  border-radius: 20px;
+  top: 230px;
+  right: 405px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.13);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .clothes-size-top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    p {
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .clothes-size-table {
+    width: 1124px;
+    height: 214px;
+    background-color: white;
+
+    .size-code-block {
+      height: 100%;
+      display: flex;
+      gap: 36px;
+
+      .size-code-inner {
+        width: 84px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 1px solid #CDDAF1;
+
+        .sizeCode {
+          font-size: 16px;
+          font-weight: 700;
+          color: #054EDB;
+        }
+      }
+
+      .sizes-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sizes-block {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          div {
+            @extend %extend-displayCenter;
+            width: 44px;
+            height: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #171717;
+          }
+        }
+      }
+
+    }
+  }
+
+  .clothes-size-bottom {
+    h1 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: lowercase;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 500;
+    }
   }
 }
