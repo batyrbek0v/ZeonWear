@@ -12,7 +12,9 @@ const $showFilterMobile = document.querySelector('.show-filter-modal-mobile')
 const $showClothesSize = document.querySelector('.show-clothes-size')
 const $clothesSizeTable = document.querySelector('.clothes-size-table')
 const $clothesSizeСontainer = document.querySelector('.clothes-size-container')
-const $body = document.querySelector('body')
+const $closeClothesSizeModal = document.querySelector('.close-clothes-size-modal')
+const $clotheSizesModalMobile = document.querySelector('.clothe-sizes-block')
+const $overley = document.querySelector('.overley')
 // DOM-ELEMENTS
 
 
@@ -608,7 +610,7 @@ const modalTemplate = () => {
   <p>Сортировать по:</p>
   <label>
     <input type="radio" name="sorting">
-    Популярность
+    Популярности
   </label>
   <label>
     <input type="radio" name="sorting">
@@ -715,7 +717,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
             <button>46</button>
             <button>47</button>
           </div>
-          <p>Таблица размеров</p>
+          <p onclick="showClothesSizePopUp()">Таблица размеров</p>
         </div>
       </div>
       <div class="men-filter-list-wrapper">
@@ -783,8 +785,8 @@ const clothesSizeTemplate = (sizes) => {
     <div class="sizes-container">
       ${sizes.map(({ sizes }) => `
         <div class="sizes-block">
-          ${sizes.map(item => `<div>${item.size}</div>`)
-      .join('')}
+          ${sizes.map(item => `<div>${item.size}</div>`
+  ).join('')}
         </div>
       `).join('')}
     </div>
@@ -798,6 +800,11 @@ const closeMobileFilterPopUp = () => {
   $menFilterPopUpMobile.classList.remove('showFilterPopUpMobile')
 }
 
+
+const showClothesSizePopUp = () => {
+  $clothesSizeСontainer.classList.toggle('active')
+  $overley.classList.toggle('active')
+}
 
 
 $showModalBtn.addEventListener('click', e => {
@@ -826,7 +833,17 @@ $showClothesSize.addEventListener('click', e => {
   e.preventDefault()
 
   $clothesSizeСontainer.classList.toggle('active')
+  $overley.classList.toggle('active')
+})
 
-  $body.classList.toggle('blur')
+$closeClothesSizeModal.addEventListener('click', e => {
+  e.preventDefault()
 
+  $overley.classList.remove('active')
+  $clothesSizeСontainer.classList.remove('active')
+})
+
+$clotheSizesModalMobile.addEventListener('click', e => {
+  $overley.classList.remove('active')
+  $clothesSizeСontainer.classList.remove('active')
 })
