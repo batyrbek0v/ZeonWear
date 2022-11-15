@@ -2989,6 +2989,11 @@ footer .footer-container {
     border-radius: 16px;
   }
 }
+@media (max-width: 426px) {
+  .team-container .team-container-inner .team-image a::before {
+    border-radius: none;
+  }
+}
 .team-container .team-container-inner .team-image a:hover:before {
   opacity: 1;
   visibility: visible;
