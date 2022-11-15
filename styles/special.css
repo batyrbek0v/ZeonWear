@@ -2711,7 +2711,14 @@ footer .footer-container {
   backdrop-filter: blur(5px);
 }
 @media (max-width: 426px) {
+  .overley.active {
+    height: 100%;
+    z-index: 99;
+  }
+}
+@media (max-width: 426px) {
   .overley {
+    height: auto;
     z-index: 99;
   }
 }
@@ -2816,6 +2823,7 @@ footer .footer-container {
 @media (max-width: 426px) {
   .overley .clothes-size-container .clothes-size-table .size-code-block {
     flex-direction: column;
+    gap: 20px;
   }
 }
 .overley .clothes-size-container .clothes-size-table .size-code-block .size-code-inner {
@@ -2840,6 +2848,11 @@ footer .footer-container {
   font-weight: 700;
   color: #054EDB;
 }
+@media (max-width: 426px) {
+  .overley .clothes-size-container .clothes-size-table .size-code-block .size-code-inner .sizeCode {
+    width: 48px;
+  }
+}
 .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container {
   width: 100%;
   display: flex;
@@ -2862,7 +2875,7 @@ footer .footer-container {
   .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block {
     width: auto;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
   }
 }
 .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div {
@@ -2879,6 +2892,7 @@ footer .footer-container {
 }
 @media (max-width: 426px) {
   .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div {
+    width: 44px;
     justify-content: flex-start;
   }
 }
