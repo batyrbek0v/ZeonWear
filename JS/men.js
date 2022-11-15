@@ -646,7 +646,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
         ${filterList.map(({ listTitle, list }) => `
           <div class="men-sidebar-filter-list">
               <div class="men-sidebar-filter-title">
-                <h1>${listTitle}</h1>
+                <p>${listTitle}</p>
                 <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
               </div>
               ${list.map(item => `
@@ -660,7 +660,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
       </div>
       <div class="men-filter-block">
         <div class="men-sidebar-filter-title">
-          <h1>Бренд</h1>
+          <p>Бренд</p>
           <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
         </div>
         <label>
@@ -669,7 +669,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
       </div>
       <div class="men-filter-block">
         <div class="men-sidebar-filter-title">
-          <h1>Цена</h1>
+          <p>Цена</p>
           <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
         </div>
         <div class="men-filter-sort-block">
@@ -689,7 +689,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
       </div>
       <div class="men-filter-block">
         <div class="men-sidebar-filter-title">
-          <h1>Размер</h1>
+          <p>Размер</p>
           <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
         </div>
         <div class="men-filter-size-block">
@@ -722,7 +722,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
       </div>
       <div class="men-filter-list-wrapper">
         <div class="men-sidebar-filter-title second">
-          <h1>Материал</h1>
+          <p>Материал</p>
           <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
         </div>
         <div class="men-sidebar-filter-list">
@@ -754,7 +754,7 @@ const filterMobilePopUpTemplate = (HEX, filterList) => {
       </div>
       <div class="men-filter-block">
         <div class="men-sidebar-filter-title">
-          <h1>Цвет</h1>
+          <p>Цвет</p>
           <img src="/assets/icons/arrow-down-filter.svg" alt="arrow-down">
         </div>
         <div class="men-filter-color-wrapper">

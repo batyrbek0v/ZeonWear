@@ -2199,6 +2199,7 @@ footer .nav-container {
   gap: 10px;
 }
 .special .filter-modal-mobile .men-sidebar-filter-block .close-filter-modal p {
+  color: black;
   font-size: 15px;
   font-weight: 600;
 }
@@ -2210,9 +2211,10 @@ footer .nav-container {
 .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-list-wrapper .men-sidebar-filter-title.second {
   margin-top: 20px;
 }
-.special .filter-modal-mobile .men-sidebar-filter-block .men-filter-list-wrapper .men-sidebar-filter-title h1 {
-  font-size: 15px;
+.special .filter-modal-mobile .men-sidebar-filter-block .men-filter-list-wrapper .men-sidebar-filter-title p {
+  font-size: 14px;
   color: black;
+  font-weight: 600;
 }
 .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-list-wrapper .men-sidebar-filter-list {
   display: flex;
@@ -2249,9 +2251,10 @@ footer .nav-container {
   gap: 10px;
   margin-top: 20px;
 }
-.special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-sidebar-filter-title h1 {
-  font-size: 15px;
+.special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-sidebar-filter-title p {
+  font-size: 14px;
   color: black;
+  font-weight: 600;
 }
 .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block label .men-filter-search {
   width: 100%;
@@ -2408,6 +2411,11 @@ footer .nav-container {
 }
 .special #men-sidebar .men-sidebar-filter-block .men-filter-list-wrapper .men-sidebar-filter-list:last-child {
   margin: 0 !important;
+}
+.special #men-sidebar .men-sidebar-filter-block .men-filter-block .men-sidebar-filter-title p {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
 }
 .special #men-sidebar .men-sidebar-filter-block .men-filter-block .men-filter-size-block .men-filter-size-btns {
   flex-wrap: wrap;
