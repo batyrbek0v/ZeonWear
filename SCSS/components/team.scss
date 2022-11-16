@@ -1,7 +1,7 @@
 .team-container {
   width: 100%;
   padding: 0 5.4rem;
-
+  
   @media (max-width:1025px) {
     padding: 2rem;
   }
@@ -56,7 +56,8 @@
           }
 
           @media (max-width:426px) {
-            border-radius: none;
+            border-radius: 0;
+            height: 100%;
           }
         }
 
@@ -86,7 +87,7 @@
         }
       }
 
-      .f {
+      .team-image-content {
         position: absolute;
         bottom: 0;
         font-weight: 800;
