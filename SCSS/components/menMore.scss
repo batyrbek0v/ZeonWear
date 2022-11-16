@@ -1,0 +1,396 @@
+// HEADER
+
+.nav {
+
+  &.menMore-nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+
+.menMore-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width:1025px) {
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  .menMore-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2202px;
+    gap: 22px;
+
+    @media (max-width:1025px) {
+      flex-wrap: wrap;
+      height: auto`;
+    }
+
+    .menMore-product-container {
+      width: 1032px;
+      background-color: white;
+      border-radius: 16px;
+      padding: 32px 32px 48px 32px;
+
+      @media (max-width:1025px) {
+        width: auto;
+      }
+
+      .menMore-product-top {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .menMore-product-top-title {
+          display: flex;
+          gap: 16px;
+
+          h1 {
+            color: #171717;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+          }
+
+          p {
+            font-weight: 500;
+            color: #8B96B1;
+            font-size: 24px;
+          }
+        }
+
+        .menMore-top-routes-block {
+          a {
+            color: #8B96B1;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .product-image-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        row-gap: 4px;
+        margin-top: 24px;
+
+        .product-image {
+          @media (max-width:1025px) {
+            width: 49%;
+          }
+        }
+
+        img {
+          @media (max-width:1025px) {
+            width: 100%;
+          }
+        }
+
+      }
+
+      .menMore-description-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 664px;
+        color: #171717;
+        margin-top: 32px;
+
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19.5px;
+        }
+
+        a {
+          font-size: 13px;
+          font-weight: 500;
+          color: #054EDB;
+        }
+      }
+
+      .menMore-characteristic-block {
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+
+
+        h1 {
+          font-size: 24px;
+          color: #171717;
+          font-weight: 700;
+        }
+
+        .desc {
+          font-size: 13px;
+          font-weight: 500;
+          color: #054EDB;
+          margin-top: 18px;
+        }
+
+        .characteristic-wrapper {
+          width: 513px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .characteristic-box {
+            display: flex;
+            gap: 4px;
+
+            .characteristic-box-title {
+              width: 263px;
+              display: flex;
+
+              p {
+                font-size: 13px;
+                font-weight: 400;
+                color: #8B96B1;
+              }
+
+              .bordered-box {
+                flex-grow: 1;
+                border-bottom: 1px dashed #171717;
+              }
+            }
+
+            .characteristic-desc {
+
+              p {
+                font-size: 13px;
+                font-weight: 500;
+                color: #171717;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    #menMore-sidebar {
+      width: 336px;
+      height: 646px;
+      background-color: white;
+      border-radius: 16px;
+      padding: 2rem 24px;
+
+      @media (max-width:1025px) {
+        width: auto;
+        height: auto;
+      }
+
+      .menMore-sidebar-filter-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .menMore-filter-block {
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+
+          &:not(:first-child) {
+            margin-top: 32px;
+          }
+
+          .menMore-sidebar-filter-title {
+            width: 100%;
+            display: flex;
+            gap: 6px;
+
+            p {
+              color: black;
+              font-size: 14px;
+              font-weight: 600;
+            }
+
+
+          }
+
+          .menMore-filter-size-block {
+            .menMore-filter-size-countries {
+              display: flex;
+              gap: 18px;
+              margin-top: 4px;
+
+              div {
+                width: 34px;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                  border-right: 1px solid #98949E;
+                  border-right: 1px solid #0000001A
+                }
+
+                span {
+                  font-size: 13px;
+                  font-weight: 600;
+                  color: #8B96B1;
+
+                  &.active {
+                    color: #054EDB;
+                  }
+                }
+              }
+            }
+
+            .menMore-filter-size-btns {
+              margin-top: 14px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+              row-gap: 16px;
+
+              button {
+                @extend %extend-auth-input;
+                width: 48px;
+                height: 40px;
+                background-color: transparent;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 12px;
+                border-radius: 8px;
+                color: #171717;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                  border: 1px solid #054EDB;
+                }
+              }
+            }
+
+            p {
+              font-size: 13px;
+              font-weight: 600;
+              color: #054EDB;
+              text-align: center;
+              text-decoration: underline;
+              margin-top: 16px;
+              cursor: pointer;
+            }
+          }
+
+          .menMore-sidebar-img-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 8px;
+            margin-top: 7px;
+
+            div {
+              width: 66px;
+              height: 66px;
+              transition: .3s;
+              border-radius: 8px;
+              cursor: pointer;
+              border: 1px solid #054cdb00;
+
+              &:hover {
+                border: 1px solid #054EDB;
+                border-radius: 8px;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+
+          .menMore-price {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 6px;
+
+            @media (max-width:1025px) {
+              justify-content: flex-start;
+              gap: 12px;
+            }
+
+            p {
+              font-size: 17px;
+              color: #8B96B1;
+              font-weight: 700;
+
+              strong {
+                color: #171717;
+                margin-left: 14px;
+
+              }
+
+              &:last-child {
+                font-weight: 500;
+              }
+            }
+
+            del {
+              font-size: 17px;
+              color: #8B96B1;
+              font-weight: 500;
+              border-left: 1px solid #0000001A;
+              border-right: 1px solid #0000001A;
+              padding: 0 8px;
+            }
+          }
+
+          .menMore-price-bottom {
+            display: flex;
+            gap: 8px;
+            margin-top: 14px;
+
+            div {
+              @extend %extend-displayCenter;
+              width: 44px;
+              height: 44px;
+              border-radius: 16px;
+              border: 1px solid #8B96B1;
+
+              @media (max-width:1025px) {
+                width: 10%;
+              }
+
+              img {
+                width: 20px;
+                height: 20px
+              }
+            }
+
+            button {
+              @extend %extend-displayCenter;
+              @extend %extend-auth-input;
+              width: auto;
+              justify-content: space-around;
+              flex-grow: 1;
+              padding: 4px 24px 8px 22px;
+              color: white;
+              background-color: #171717;
+              border: 0;
+
+              @media (max-width:1025px) {
+                justify-content: center;
+                gap: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
