@@ -8,8 +8,10 @@ body {
 .nav {
 
   &.menMore-nav {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    @media (max-width:1025px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
 }
@@ -64,6 +66,8 @@ body {
       }
 
       .menMore-sidebar-mobile {
+        display: none;
+
         @media (max-width:426px) {
           display: block;
         }
@@ -77,7 +81,7 @@ body {
         @media (max-width:426px) {
           flex-direction: column-reverse;
           align-items: center;
-          margin-top: 22px;
+          margin-top: 8px;
           gap: 20px;
         }
 
@@ -98,10 +102,10 @@ body {
             text-transform: uppercase;
 
             @media (max-width:426px) {
-              font-size: 22px;
+              letter-spacing: 0.2em;
             }
 
-            @media (max-width:4376px) {
+            @media (max-width:376px) {
               font-size: 18px;
             }
           }
@@ -113,6 +117,7 @@ body {
 
             @media (max-width:426px) {
               font-size: 18px;
+              letter-spacing: 0.2em;
             }
 
             @media (max-width:376px) {
@@ -130,7 +135,7 @@ body {
             font-size: 14px;
 
             @media (max-width:376px) {
-              font-size: 12px;
+              font-size: 11px;
             }
           }
         }
@@ -180,6 +185,7 @@ body {
         @media (max-width:426px) {
           padding-top: 20px;
           border-top: 1px solid #D4E3FF;
+          position: relative;
         }
 
         h1 {
@@ -199,10 +205,73 @@ body {
           color: #054EDB;
         }
 
+        .added-to-cart-popUp {
+          &.mobile {
+            position: absolute;
+            width: 336px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #D4E3FF;
+            gap: 10px;
+            border-radius: 16px;
+            left: -50%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+
+            @media (max-width:426px) {
+              width: auto;
+              z-index: 2;
+              top: 62%;
+            }
+
+            &.added {
+              opacity: 1;
+              visibility: visible;
+              left: 0;
+
+            }
+
+            p {
+              font-size: 13px;
+              font-weight: 400;
+            }
+
+            a {
+              button {
+                color: white;
+                background-color: #054EDB;
+                padding: 8px 10px;
+                border-radius: 12px;
+                border: 0;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 0.3s;
+                border: 1px solid #054EDB;
+
+                &:hover {
+                  background-color: white;
+                  color: #054EDB;
+                }
+              }
+            }
+          }
+
+        }
+
         .menMore-price-bottom {
           display: flex;
+          height: auto;
           gap: 8px;
           margin-top: 14px;
+          display: none;
+
+          @media (max-width:426px) {
+            display: flex;
+          }
 
           div {
             @extend %extend-displayCenter;
@@ -225,6 +294,8 @@ body {
             }
           }
 
+
+
           button {
             @extend %extend-displayCenter;
             @extend %extend-auth-input;
@@ -245,6 +316,8 @@ body {
               padding: 0;
             }
           }
+
+
         }
       }
 
@@ -301,6 +374,7 @@ body {
 
                 @media (max-width:426px) {
                   font-size: 12px;
+                  font-weight: 500;
                 }
               }
 
@@ -315,7 +389,6 @@ body {
             }
 
             .characteristic-desc {
-
               p {
                 font-size: 13px;
                 font-weight: 500;
@@ -398,6 +471,7 @@ body {
       background-color: white;
       border-radius: 16px;
       padding: 2rem 24px;
+      position: relative;
 
       @media (max-width:1025px) {
         width: auto;
@@ -596,7 +670,9 @@ body {
 
               img {
                 width: 20px;
-                height: 20px
+                height: 20px;
+                cursor: pointer;
+
               }
             }
 
@@ -610,6 +686,13 @@ body {
               color: white;
               background-color: #171717;
               border: 0;
+              cursor: pointer;
+              transition: 0.3s;
+              outline: 0;
+
+              &:hover {
+                opacity: 0.9;
+              }
 
               @media (max-width:1025px) {
                 justify-content: center;
@@ -619,6 +702,55 @@ body {
               @media (max-width:426px) {
                 padding: 0;
               }
+            }
+          }
+
+        }
+      }
+
+      .added-tto-cart-popUp {
+        position: absolute;
+        width: 336px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        gap: 10px;
+        border-radius: 16px;
+        left: -50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        bottom: -12%;
+
+        &.added {
+          opacity: 1;
+          visibility: visible;
+          left: 0;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+        }
+
+        a {
+          button {
+            color: white;
+            background-color: #054EDB;
+            padding: 8px 10px;
+            border-radius: 12px;
+            border: 0;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px solid #054EDB;
+
+            &:hover {
+              background-color: white;
+              color: #054EDB;
             }
           }
         }

@@ -26,7 +26,6 @@
         zeon wear
       </a>
     </nav>
-
   </header>
   <main>
     <div class="menMore-container">
@@ -71,7 +70,6 @@
                   <del>11 033 ₽</del>
                   <p>15%</p>
                 </div>
-
               </div>
               <div class="menMore-filter-block">
                 <div class="menMore-sidebar-filter-title">
@@ -134,9 +132,7 @@
                     <img src="/assets/images/menMore-sidebar-img3.png" alt="">
                   </div>
                 </div>
-
               </div>
-
             </div>
           </aside>
           <div class="product-image-wrapper">
@@ -150,12 +146,21 @@
               tristique nulla augue aliquam. Amet, volutpat nisl et scelerisque ut egestas eget
             </p>
             <a href="#">Подробнее</a>
+            <div class="added-to-cart-popUp mobile">
+              <img src="/assets/icons/checked.svg" alt="">
+              <p>Товар добавлен в корзину</p>
+              <a href="#">
+                <button>Корзина</button>
+              </a>
+            </div>
             <div class="menMore-price-bottom">
               <div>
                 <img src="/assets/icons/heart.svg" alt="">
               </div>
-              <button>
-                <img src="/assets/icons/shopping-cart-white.svg" alt="">
+              <!-- MOBILE-POPUP-FOR-ADD-TO-CART -->
+
+              <button class="add-to-cart mobile">
+                <img src="/assets/icons/shopping-cart-white.svg" alt="shopping-cart-icon">
                 Добавить в корзину
               </button>
             </div>
@@ -163,7 +168,7 @@
           <div class="menMore-characteristic-block">
             <h1>Характеристики</h1>
             <div class="characteristic-wrapper">
-
+              <!-- ХАРАКТЕРИСТИКИ РЕНДЕРЯТСЯ С ПОМОЩЬЮ JS -->
             </div>
             <p class="desc">Свернуть</p>
           </div>
@@ -244,12 +249,19 @@
                 <div>
                   <img src="/assets/icons/heart.svg" alt="">
                 </div>
-                <button>
-                  <img src="/assets/icons/shopping-cart-white.svg" alt="">
+                <button class="add-to-cartt">
+                  <img src="/assets/icons/shopping-cart-white.svg" alt="shopping-cart-icon">
                   Добавить в корзину
                 </button>
               </div>
             </div>
+          </div>
+          <div class="added-tto-cart-popUp">
+            <img src="/assets/icons/checked.svg" alt="">
+            <p>Товар добавлен в корзину</p>
+            <a href="#">
+              <button>Корзина</button>
+            </a>
           </div>
         </aside>
       </div>

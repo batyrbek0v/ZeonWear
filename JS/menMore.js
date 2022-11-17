@@ -1,6 +1,9 @@
 const $imageWrapper = document.querySelector('.product-image-wrapper')
 const $listWrapper = document.querySelector('.characteristic-wrapper')
-
+const $addToCartBtn = document.querySelector('.add-to-cartt')
+const $addedPopUp = document.querySelector('.added-tto-cart-popUp')
+const $addToCartBtnMobile = document.querySelector('.add-to-cart')
+const $addedPopUpMobile = document.querySelector('.added-to-cart-popUp')
 
 
 const imageBase = [
@@ -72,6 +75,23 @@ window.addEventListener('load', () => {
   descriptionTemplate(productDescription)
 })
 
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+
+  },
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 1500,
+
+  }
+});
+
 const imageTemplate = (base) => {
   const template = base.map(({ url }) => {
     return `
@@ -103,19 +123,21 @@ const descriptionTemplate = (base) => {
   $listWrapper.innerHTML = template
 }
 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
+$addToCartBtn.addEventListener('click', e => {
+  e.preventDefault()
+  $addedPopUp.classList.toggle('added')
 
-  },
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 1500,
+  setTimeout(() => {
+    $addedPopUp.classList.remove('added')
+  }, 2000)
 
-  }
-});
+})
+
+$addToCartBtnMobile.addEventListener('click', e => {
+  e.preventDefault()
+  $addedPopUpMobile.classList.toggle('added')
+
+  setTimeout(() => {
+    $addedPopUpMobile.classList.remove('added')
+  }, 2000)
+})

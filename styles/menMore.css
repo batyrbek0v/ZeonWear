@@ -3075,9 +3075,11 @@ body {
   height: auto;
 }
 
-.nav.menMore-nav {
-  padding-left: 2rem;
-  padding-right: 2rem;
+@media (max-width: 1025px) {
+  .nav.menMore-nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .menMore-container {
@@ -3133,6 +3135,9 @@ body {
     border-radius: 0;
   }
 }
+.menMore-container .menMore-inner .menMore-product-container .menMore-sidebar-mobile {
+  display: none;
+}
 @media (max-width: 426px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-sidebar-mobile {
     display: block;
@@ -3147,7 +3152,7 @@ body {
   .menMore-container .menMore-inner .menMore-product-container .menMore-product-top {
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 8px;
     gap: 20px;
   }
 }
@@ -3170,10 +3175,10 @@ body {
 }
 @media (max-width: 426px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-product-top .menMore-product-top-title h1 {
-    font-size: 22px;
+    letter-spacing: 0.2em;
   }
 }
-@media (max-width: 4376px) {
+@media (max-width: 376px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-product-top .menMore-product-top-title h1 {
     font-size: 18px;
   }
@@ -3186,6 +3191,7 @@ body {
 @media (max-width: 426px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-product-top .menMore-product-top-title p {
     font-size: 18px;
+    letter-spacing: 0.2em;
   }
 }
 @media (max-width: 376px) {
@@ -3200,7 +3206,7 @@ body {
 }
 @media (max-width: 376px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-product-top .menMore-top-routes-block a {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .menMore-container .menMore-inner .menMore-product-container .product-image-wrapper {
@@ -3247,6 +3253,7 @@ body {
   .menMore-container .menMore-inner .menMore-product-container .menMore-description-block {
     padding-top: 20px;
     border-top: 1px solid #D4E3FF;
+    position: relative;
   }
 }
 .menMore-container .menMore-inner .menMore-product-container .menMore-description-block h1 {
@@ -3263,10 +3270,64 @@ body {
   font-weight: 500;
   color: #054EDB;
 }
+.menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile {
+  position: absolute;
+  width: 336px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #D4E3FF;
+  gap: 10px;
+  border-radius: 16px;
+  left: -50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile {
+    width: auto;
+    z-index: 2;
+    top: 62%;
+  }
+}
+.menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile.added {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile a button {
+  color: white;
+  background-color: #054EDB;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #054EDB;
+}
+.menMore-container .menMore-inner .menMore-product-container .menMore-description-block .added-to-cart-popUp.mobile a button:hover {
+  background-color: white;
+  color: #054EDB;
+}
 .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom {
   display: flex;
+  height: auto;
   gap: 8px;
   margin-top: 14px;
+  display: none;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom {
+    display: flex;
+  }
 }
 .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div {
   width: 44px;
@@ -3363,6 +3424,7 @@ body {
 @media (max-width: 426px) {
   .menMore-container .menMore-inner .menMore-product-container .menMore-characteristic-block .characteristic-wrapper .characteristic-box .characteristic-box-title p {
     font-size: 12px;
+    font-weight: 500;
   }
 }
 .menMore-container .menMore-inner .menMore-product-container .menMore-characteristic-block .characteristic-wrapper .characteristic-box .characteristic-box-title .bordered-box {
@@ -3442,6 +3504,7 @@ body {
   background-color: white;
   border-radius: 16px;
   padding: 2rem 24px;
+  position: relative;
 }
 @media (max-width: 1025px) {
   .menMore-container .menMore-inner #menMore-sidebar {
@@ -3618,6 +3681,7 @@ body {
 .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div img {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button {
   width: auto;
@@ -3627,6 +3691,12 @@ body {
   color: white;
   background-color: #171717;
   border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: 0;
+}
+.menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button:hover {
+  opacity: 0.9;
 }
 @media (max-width: 1025px) {
   .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button {
@@ -3638,6 +3708,47 @@ body {
   .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button {
     padding: 0;
   }
+}
+.menMore-container .menMore-inner #menMore-sidebar .added-tto-cart-popUp {
+  position: absolute;
+  width: 336px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  gap: 10px;
+  border-radius: 16px;
+  left: -50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  bottom: -12%;
+}
+.menMore-container .menMore-inner #menMore-sidebar .added-tto-cart-popUp.added {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.menMore-container .menMore-inner #menMore-sidebar .added-tto-cart-popUp p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.menMore-container .menMore-inner #menMore-sidebar .added-tto-cart-popUp a button {
+  color: white;
+  background-color: #054EDB;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #054EDB;
+}
+.menMore-container .menMore-inner #menMore-sidebar .added-tto-cart-popUp a button:hover {
+  background-color: white;
+  color: #054EDB;
 }
 @media (max-width: 426px) {
   .menMore-container .menMore-inner .menMore-sidebar-mobile {
