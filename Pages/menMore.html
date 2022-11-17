@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/menMore.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
   <title>MenMore</title>
 </head>
 
@@ -29,6 +31,23 @@
   <main>
     <div class="menMore-container">
       <div class="menMore-inner">
+        <div class="swiper mySwiper menMore-swiper-mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/images/menMore-img2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/menMore-img1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/menMore-img2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/menMore-img1.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
         <div class="menMore-product-container">
           <div class="menMore-product-top">
             <div class="menMore-product-top-title">
@@ -42,6 +61,84 @@
               <a href="#">Тоp Flex Rebound</a>
             </div>
           </div>
+          <aside id="menMore-sidebar" class="menMore-sidebar-mobile">
+            <div class="menMore-sidebar-filter-block">
+              <div class="menMore-filter-block">
+                <div class="menMore-price">
+                  <p>
+                    Цена: <strong>12 980 &#8381</strong>
+                  </p>
+                  <del>11 033 ₽</del>
+                  <p>15%</p>
+                </div>
+
+              </div>
+              <div class="menMore-filter-block">
+                <div class="menMore-sidebar-filter-title">
+                  <p>Размер</p>
+                  <img src="/assets/icons/menMore-arrow-down.svg" alt="arrow-down">
+                </div>
+                <div class="menMore-filter-size-block">
+                  <div class="menMore-filter-size-countries">
+                    <div>
+                      <span class="active">EU</span>
+                    </div>
+                    <div><span>US</span></div>
+                    <div><span>JP</span></div>
+                    <div><span>RU</span></div>
+                  </div>
+                  <div class="menMore-filter-size-btns">
+                    <button>38</button>
+                    <button>39</button>
+                    <button>40</button>
+                    <button>40,5</button>
+                    <button>41</button>
+                    <button>42</button>
+                    <button>42,5</button>
+                    <button>43</button>
+                    <button>43,5</button>
+                    <button>44</button>
+                    <button>44,5</button>
+                    <button>45</button>
+                    <button>46</button>
+                    <button>47</button>
+                  </div>
+                  <p class="show-clothes-size">Таблица размеров</p>
+                </div>
+              </div>
+              <div class="menMore-filter-block">
+                <div class="menMore-sidebar-filter-title">
+                  <p>Цвет</p>
+                  <img src="/assets/icons/menMore-arrow-down.svg" alt="arrow-down">
+                </div>
+                <div class="menMore-sidebar-img-wrapper">
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img1.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img2.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img3.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img4.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img1.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img2.png" alt="">
+                  </div>
+                  <div>
+                    <img src="/assets/images/menMore-sidebar-img3.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </aside>
           <div class="product-image-wrapper">
             <!-- КАРТИНКИ РЕНДЕРЯТСЯ С ПОМОЩЬЮ JS -->
           </div>
@@ -53,6 +150,15 @@
               tristique nulla augue aliquam. Amet, volutpat nisl et scelerisque ut egestas eget
             </p>
             <a href="#">Подробнее</a>
+            <div class="menMore-price-bottom">
+              <div>
+                <img src="/assets/icons/heart.svg" alt="">
+              </div>
+              <button>
+                <img src="/assets/icons/shopping-cart-white.svg" alt="">
+                Добавить в корзину
+              </button>
+            </div>
           </div>
           <div class="menMore-characteristic-block">
             <h1>Характеристики</h1>
@@ -62,7 +168,7 @@
             <p class="desc">Свернуть</p>
           </div>
         </div>
-        <aside id="menMore-sidebar">
+        <aside id="menMore-sidebar" class="menMore-sidebar-mobile">
           <div class="menMore-sidebar-filter-block">
             <div class="menMore-filter-block">
               <div class="menMore-sidebar-filter-title">
@@ -150,6 +256,7 @@
     </div>
   </main>
   <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/JS/menMore.js"></script>
 </body>
 

@@ -1,4 +1,9 @@
 // HEADER
+html,
+body {
+  height: auto;
+}
+
 
 .nav {
 
@@ -21,6 +26,10 @@
     height: 100%;
   }
 
+  @media (max-width:426px) {
+    padding: 0;
+  }
+
   .menMore-inner {
     display: flex;
     justify-content: center;
@@ -30,8 +39,13 @@
 
     @media (max-width:1025px) {
       flex-wrap: wrap;
-      height: auto`;
+      height: auto;
     }
+
+    @media (max-width:426px) {
+      gap: 0px;
+    }
+
 
     .menMore-product-container {
       width: 1032px;
@@ -40,7 +54,19 @@
       padding: 32px 32px 48px 32px;
 
       @media (max-width:1025px) {
-        width: auto;
+        width: 100%;
+        padding: 1rem;
+      }
+
+      @media (max-width:426px) {
+        padding: 1rem;
+        border-radius: 0;
+      }
+
+      .menMore-sidebar-mobile {
+        @media (max-width:426px) {
+          display: block;
+        }
       }
 
       .menMore-product-top {
@@ -48,9 +74,22 @@
         flex-direction: column;
         gap: 6px;
 
+        @media (max-width:426px) {
+          flex-direction: column-reverse;
+          align-items: center;
+          margin-top: 22px;
+          gap: 20px;
+        }
+
         .menMore-product-top-title {
           display: flex;
           gap: 16px;
+
+          @media (max-width:426px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+          }
 
           h1 {
             color: #171717;
@@ -58,12 +97,29 @@
             font-weight: 700;
             text-transform: uppercase;
 
+            @media (max-width:426px) {
+              font-size: 22px;
+            }
+
+            @media (max-width:4376px) {
+              font-size: 18px;
+            }
           }
 
           p {
             font-weight: 500;
             color: #8B96B1;
             font-size: 24px;
+
+            @media (max-width:426px) {
+              font-size: 18px;
+            }
+
+            @media (max-width:376px) {
+              font-size: 14px;
+            }
+
+
           }
         }
 
@@ -72,6 +128,10 @@
             color: #8B96B1;
             font-weight: 500;
             font-size: 14px;
+
+            @media (max-width:376px) {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -83,9 +143,17 @@
         row-gap: 4px;
         margin-top: 24px;
 
+        @media (max-width:426px) {
+          display: none;
+        }
+
         .product-image {
           @media (max-width:1025px) {
             width: 49%;
+          }
+
+          @media (max-width:426px) {
+            width: auto;
           }
         }
 
@@ -98,12 +166,21 @@
       }
 
       .menMore-description-block {
+        width: 664px;
         display: flex;
         flex-direction: column;
         gap: 8px;
-        width: 664px;
         color: #171717;
         margin-top: 32px;
+
+        @media (max-width:769px) {
+          width: auto;
+        }
+
+        @media (max-width:426px) {
+          padding-top: 20px;
+          border-top: 1px solid #D4E3FF;
+        }
 
         h1 {
           font-size: 24px;
@@ -121,6 +198,54 @@
           font-weight: 500;
           color: #054EDB;
         }
+
+        .menMore-price-bottom {
+          display: flex;
+          gap: 8px;
+          margin-top: 14px;
+
+          div {
+            @extend %extend-displayCenter;
+            width: 44px;
+            height: 44px;
+            border-radius: 16px;
+            border: 1px solid #8B96B1;
+
+            @media (max-width:1025px) {
+              width: 10%;
+            }
+
+            @media (max-width:426px) {
+              display: none;
+            }
+
+            img {
+              width: 20px;
+              height: 20px
+            }
+          }
+
+          button {
+            @extend %extend-displayCenter;
+            @extend %extend-auth-input;
+            width: auto;
+            justify-content: space-around;
+            flex-grow: 1;
+            padding: 4px 24px 8px 22px;
+            color: white;
+            background-color: #171717;
+            border: 0;
+
+            @media (max-width:1025px) {
+              justify-content: center;
+              gap: 12px;
+            }
+
+            @media (max-width:426px) {
+              padding: 0;
+            }
+          }
+        }
       }
 
       .menMore-characteristic-block {
@@ -128,6 +253,10 @@
         display: flex;
         flex-direction: column;
 
+        @media (max-width:426px) {
+          padding-top: 20px;
+          border-top: 1px solid #D4E3FF;
+        }
 
         h1 {
           font-size: 24px;
@@ -149,6 +278,10 @@
           flex-direction: column;
           gap: 16px;
 
+          @media (max-width:769px) {
+            width: auto;
+          }
+
           .characteristic-box {
             display: flex;
             gap: 4px;
@@ -157,15 +290,27 @@
               width: 263px;
               display: flex;
 
+              @media (max-width:426px) {
+                width: 40%;
+              }
+
               p {
                 font-size: 13px;
                 font-weight: 400;
                 color: #8B96B1;
+
+                @media (max-width:426px) {
+                  font-size: 12px;
+                }
               }
 
               .bordered-box {
                 flex-grow: 1;
                 border-bottom: 1px dashed #171717;
+
+                @media (max-width:426px) {
+                  display: none;
+                }
               }
             }
 
@@ -175,11 +320,75 @@
                 font-size: 13px;
                 font-weight: 500;
                 color: #171717;
+
+                @media (max-width:426px) {
+                  font-size: 12px;
+                }
               }
             }
           }
         }
 
+      }
+
+
+    }
+
+    // SWIPER
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+      @media (max-width:426px) {
+        width: auto;
+        height: 320px;
+        display: block;
+      }
+
+      .swiper-pagination-progressbar {
+        background-color: #D4E3FF;
+        top: auto;
+        bottom: 0;
+        height: 2.5px;
+      }
+
+      .swiper-pagination-progressbar-fill {
+        background-color: #171717;
+      }
+
+      &.menMore-swiper-mobile {
+        display: none;
+
+        @media (max-width:426px) {
+          display: block;
+        }
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
 
@@ -195,10 +404,21 @@
         height: auto;
       }
 
+      @media (max-width:426px) {
+        border-radius: 0;
+        padding: 0;
+      }
+
+
+
       .menMore-sidebar-filter-block {
         height: 100%;
         display: flex;
         flex-direction: column;
+
+        @media (max-width:426px) {
+          padding-top: 2rem;
+        }
 
         .menMore-filter-block {
           display: flex;
@@ -324,6 +544,10 @@
               gap: 12px;
             }
 
+            @media (max-width:426px) {
+              justify-content: center;
+            }
+
             p {
               font-size: 17px;
               color: #8B96B1;
@@ -366,6 +590,10 @@
                 width: 10%;
               }
 
+              @media (max-width:426px) {
+                display: none;
+              }
+
               img {
                 width: 20px;
                 height: 20px
@@ -387,9 +615,19 @@
                 justify-content: center;
                 gap: 12px;
               }
+
+              @media (max-width:426px) {
+                padding: 0;
+              }
             }
           }
         }
+      }
+    }
+
+    .menMore-sidebar-mobile {
+      @media (max-width:426px) {
+        display: none;
       }
     }
   }

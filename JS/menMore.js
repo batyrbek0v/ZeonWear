@@ -72,8 +72,6 @@ window.addEventListener('load', () => {
   descriptionTemplate(productDescription)
 })
 
-
-
 const imageTemplate = (base) => {
   const template = base.map(({ url }) => {
     return `
@@ -104,3 +102,20 @@ const descriptionTemplate = (base) => {
 
   $listWrapper.innerHTML = template
 }
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+
+  },
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 1500,
+
+  }
+});
