@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-.menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div, .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div, .men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block, .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div, .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div, .men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
 .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li {
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ a {
   align-items: center;
 }
 
-.menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-filter-size-block .menMore-filter-size-btns button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-size-block .men-filter-size-btns button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .left-sort label input,
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block button, .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-filter-size-block .menMore-filter-size-btns button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-size-block .men-filter-size-btns button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .left-sort label input,
 .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .right-sort label input, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block label .men-filter-search, .men-container .men-rightSide .main-category-block .main-category-btn, .men-container #men-sidebar .men-filter-block .men-filter-size-block .men-filter-size-btns button, .men-container #men-sidebar .men-filter-block .men-filter-sort-block .left-sort label input,
 .men-container #men-sidebar .men-filter-block .men-filter-sort-block .right-sort label input, .men-container #men-sidebar .men-filter-block label .men-filter-search, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler .regist-handler-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .auth-input,
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .right-side-regist-form .form-block .auth-input, .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .regist-form-select,
@@ -3073,6 +3073,13 @@ footer .footer-container {
 html,
 body {
   height: auto;
+  background-color: #FAFAFA;
+}
+@media (max-width: 1025px) {
+  html,
+  body {
+    background-color: white;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -3508,7 +3515,7 @@ body {
 }
 @media (max-width: 1025px) {
   .menMore-container .menMore-inner #menMore-sidebar {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }
@@ -3754,6 +3761,563 @@ body {
   .menMore-container .menMore-inner .menMore-sidebar-mobile {
     display: none;
   }
+}
+.menMore-container .menMore-bottom-swiper-container {
+  width: 100%;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.menMore-container .menMore-bottom-swiper-container .menMore-swiper-title {
+  display: flex;
+  width: 70%;
+  padding: 0 1rem;
+}
+@media (max-width: 1441px) {
+  .menMore-container .menMore-bottom-swiper-container .menMore-swiper-title {
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .menMore-swiper-title {
+    padding: 0 1rem;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .menMore-swiper-title h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .menMore-swiper-title h1 {
+    font-size: 16px;
+    letter-spacing: 0.08em;
+  }
+}
+@media (max-width: 321px) {
+  .menMore-container .menMore-bottom-swiper-container .menMore-swiper-title h1 {
+    font-size: 13px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper {
+  width: 100%;
+  height: 100%;
+  padding-left: 20rem;
+}
+@media (max-width: 1441px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper {
+    padding-left: 1rem;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-button-prev {
+  left: 270px;
+}
+@media (max-width: 1441px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-button-prev {
+    left: 0;
+  }
+}
+@media (max-width: 769px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-button-prev,
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-button-next {
+    display: none;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+  display: flex;
+  flex-direction: column;
+  width: 346px;
+  height: 463px;
+  border-radius: 16px;
+  border: 1px solid #EAF1FF;
+  position: relative;
+}
+@media (max-width: 1441px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+    width: 300px;
+    height: 100%;
+    gap: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+    width: 250px;
+  }
+}
+@media (max-width: 769px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+    height: 100%;
+    gap: 0;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+    border: 0;
+  }
+}
+@media (max-width: 376px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block {
+    width: 146px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 5px 0 13px;
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top .notNew {
+  display: none;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top .men-clothe-top-favorite {
+    width: 22px;
+    height: 20px;
+  }
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top .men-clothe-top-favorite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 5px 0 13px;
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block {
+  width: 40px;
+  height: 24px;
+  background-color: #171717;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block {
+    width: 34px;
+    padding: 4px 4px;
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-top-favorite {
+    width: 22px;
+    height: 20px;
+  }
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-top-favorite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-image {
+  width: 346px;
+  height: 346px;
+}
+@media (max-width: 1441px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-image {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-image {
+    height: 50%;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0px 0px 16px 16px;
+  background-color: white;
+}
+@media (max-width: 769px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer {
+    height: 40%;
+    justify-content: space-between;
+    padding-top: 0.55rem;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description {
+    justify-content: space-between;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description h1 {
+  font-size: 16px;
+  color: #171717;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description h1 {
+    font-size: 11px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description p {
+  color: #8B96B1;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-description p {
+    font-size: 11px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 159px;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price strong {
+  color: #171717;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price strong {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price strong {
+    font-size: 13px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price span {
+  color: #8B96B1;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price span {
+    font-size: 11px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale {
+    width: auto;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale strong {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale strong {
+    font-size: 12px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale span {
+  color: #8B96B1;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-footer .men-clothe-price-with-sale span {
+    font-size: 12px;
+  }
+}
+.menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .swiper-slide.men-clothe-block {
+  width: 346px;
+  border-radius: 16px;
+}
+@media (max-width: 769px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .swiper-slide.men-clothe-block {
+    width: 270px;
+    height: 400px;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .swiper-slide.men-clothe-block {
+    width: 200px;
+    height: 270px;
+  }
+}
+
+.menMore-reviews-container {
+  height: 1350px;
+  display: flex;
+  margin-left: 20rem;
+  margin-top: 35px;
+}
+@media (max-width: 1441px) {
+  .menMore-reviews-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner {
+  width: 1032px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+}
+@media (max-width: 1025px) {
+  .menMore-reviews-container .menMore-reviews-inner {
+    width: auto;
+  }
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner {
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner span {
+  display: none;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner span {
+    border-top: 1px solid #D4E3FF;
+    display: block;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4px;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 376px) {
+  .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #171717;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 376px) {
+  .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top h1 {
+    font-size: 16px;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top button {
+  width: 208px;
+  padding: 8px 20px;
+  background-color: #171717;
+  color: white;
+  border: 0;
+  font-weight: 500;
+}
+@media (max-width: 376px) {
+  .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top button {
+    width: 100%;
+    background-color: white;
+    color: #171717;
+    border: 1px solid #8B96B1;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 16px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 21px 14px;
+  border-radius: 16px;
+  border: 1px solid #D4E3FF;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(2) {
+  height: 286px;
+  padding: 24px 13px;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(2) {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(3) {
+  height: 198px;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(3) {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(4) {
+  height: 177px;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(4) {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(5) {
+  height: 219px;
+}
+@media (max-width: 426px) {
+  .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card:nth-child(5) {
+    height: auto;
+  }
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-user-name {
+  width: 208px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-user-name p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #171717;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .rating-stars {
+  display: flex;
+  gap: 9px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .reivew-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8B96B1;
+  line-height: 150%;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade {
+  display: flex;
+  gap: 12px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade button {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8B96B1;
+  border: 0;
+  background-color: transparent;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes {
+  width: 97px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .like,
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .disLike {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  gap: 8px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .like.like,
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .disLike.like {
+  color: #054EDB;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .like.disLike,
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .review-card .review-grade .review-likes .disLike.disLike {
+  color: #696666;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block {
+  width: 100%;
+  margin-top: 22px;
+}
+.menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block button {
+  width: 210px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: #171717;
+  border: 1px solid #8B96B1;
+}
+
+.footer-container.menMore {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=menMore.css.map */

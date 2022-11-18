@@ -829,6 +829,7 @@ $showFilterMobile.addEventListener('click', e => {
   filterMobilePopUpTemplate(filterColor, filterList)
 })
 
+
 $showClothesSize.addEventListener('click', e => {
   e.preventDefault()
 
