@@ -5,18 +5,21 @@ const $addedPopUp = document.querySelector('.added-tto-cart-popUp')
 const $addToCartBtnMobile = document.querySelector('.add-to-cart')
 const $addedPopUpMobile = document.querySelector('.added-to-cart-popUp')
 const $cardsWrapper = document.querySelector('.swiper-wrapper-cards')
+const $menMore = document.querySelector('.menMore-container')
+const $reviewsContainer = document.querySelector('.menMore-reviews-container')
+const $header = document.querySelector('.menMore-nav')
+const $footer = document.querySelector('.menMore')
+const $fullSize= document.querySelector('.menMore-image-full-size')
+const $removeFullSize = document.querySelector('.close-full-size')
 
 
 
-
-
-
-const $closeClothesSizeModal = document.querySelector('.close-clothes-size-modal')
-const $clotheSizesModalMobile = document.querySelector('.clothe-sizes-block')
-const $showClothesSize = document.querySelector('.show-clothes-size')
-const $clothesSizeTable = document.querySelector('.clothes-size-table')
-const $clothesSizeСontainer = document.querySelector('.clothes-size-container')
-const $overley = document.querySelector('.overley')
+// const $closeClothesSizeModal = document.querySelector('.close-clothes-size-modal')
+// const $clotheSizesModalMobile = document.querySelector('.clothe-sizes-block')
+// const $showClothesSize = document.querySelector('.show-clothes-size')
+// const $clothesSizeTable = document.querySelector('.clothes-size-table')
+// const $clothesSizeСontainer = document.querySelector('.clothes-size-container')
+// const $overley = document.querySelector('.overley')
 
 
 
@@ -417,10 +420,21 @@ var swiper2 = new Swiper(".mySwiperr", {
   },
 });
 
+var swiper = new Swiper(".mySwiperrr", {
+  slidesPerView: 2,
+  spaceBetween: 16,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 const imageTemplate = (base) => {
   const template = base.map(({ url }) => {
     return `
-    <div class="product-image">
+    <div class="product-image" onclick="fullSizeImagePopUp()">
       <img src="${url}" alt="Joma top-flex sneakers">
     </div>
     `
@@ -496,7 +510,14 @@ const menClotheTemplate = (clothe) => {
   $cardsWrapper.innerHTML = template
 }
 
-// 
+const fullSizeImagePopUp = () => {
+  $menMore.style.display = 'none'
+  $reviewsContainer.style.display = 'none'
+  $header.style.display = 'none'
+  $footer.style.display = 'none'
+  $fullSize.style.display = 'block'
+
+}
 
 
 
@@ -520,6 +541,14 @@ $addToCartBtnMobile.addEventListener('click', e => {
   }, 2000)
 })
 
+$removeFullSize.addEventListener('click', e => {
+  e.preventDefault()
+  $fullSize.style.display = 'none'
+  $menMore.style.display = 'flex'
+  $reviewsContainer.style.display = 'flex'
+  $header.style.display = 'flex'
+  $footer.style.display = 'flex'
+})
 
 //const showClothesSizePopUp = () => {
   //   $clothesSizeСontainer.classList.toggle('active')
