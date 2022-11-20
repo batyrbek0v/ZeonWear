@@ -1,0 +1,92 @@
+.men-container {
+  &.teamCategoryContainer {
+    justify-content: space-between;
+
+    // SIDEBAR
+
+
+
+
+    // RIGHTSIDE
+    .special-container {
+      &.teamCategory {
+        @media (max-width:769px) {
+          padding: 0 1rem;
+        }
+
+        @media (max-width:320px) {
+          padding: 0;
+        }
+
+        .special-banner {
+          &.teamCategory {
+            background: url('/assets/images/teamCategoryBanner.png') center / cover;
+            border-radius: 24px;
+
+            @media (max-width:320px) {
+              width: 100%;
+              background: url('/assets/images/teamCategoryBannerMobile.png') center/ cover;
+              border-radius: 0;
+            }
+
+            .special-banner-content {
+              &.teamCategoryBannerContent {
+                justify-content: flex-end;
+
+                @media (max-width:426px) {
+                  display: none;
+                }
+
+                div {
+                  position: relative;
+                  top: 20px;
+                  left: -100px;
+
+
+
+                  h1 {
+                    font-size: 24px;
+                    color: #6B6B6B;
+                    font-weight: 400;
+                    letter-spacing: 0.355em;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .men-rightSide {
+          &.teamCategoryRight {
+            @media (max-width:321px) {
+              padding: 0 4px;
+
+            }
+          }
+
+          .men-rightSide-top {
+            &.teamCategory {
+              @media (max-width:320px) {
+                justify-content: center;
+              }
+
+              h1 {
+
+                @media (max-width:320px) {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  &.teamCategoryFooter {
+    margin-top: 32px;
+  }
+}
