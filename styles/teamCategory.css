@@ -3119,9 +3119,14 @@ footer .footer-container {
     padding: 0 4px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .men-container.teamCategoryContainer .special-container.teamCategory .men-rightSide .men-rightSide-top.teamCategory {
     justify-content: center;
+  }
+}
+@media (max-width: 426px) {
+  .men-container.teamCategoryContainer .special-container.teamCategory .men-rightSide .men-rightSide-top.teamCategory h1 {
+    font-size: 20px;
   }
 }
 @media (max-width: 320px) {

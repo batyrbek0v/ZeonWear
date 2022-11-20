@@ -67,11 +67,14 @@
 
           .men-rightSide-top {
             &.teamCategory {
-              @media (max-width:320px) {
+              @media (max-width:426px) {
                 justify-content: center;
               }
 
               h1 {
+                @media (max-width:426px) {
+                  font-size: 20px;
+                }
 
                 @media (max-width:320px) {
                   font-size: 16px;
