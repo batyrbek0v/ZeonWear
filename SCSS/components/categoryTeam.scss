@@ -42,7 +42,9 @@
                   top: 20px;
                   left: -100px;
 
-
+                  @media (max-width:1025px) {
+                    left: 0;
+                  }
 
                   h1 {
                     font-size: 24px;
