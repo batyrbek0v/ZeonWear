@@ -154,9 +154,15 @@ const clotheBase = [
 
 window.addEventListener('load', () => {
   menClotheTemplate(clotheBase)
-
 })
 
+// const wordCounter = (str) => {
+//   const text = $textField.value.trim()
+
+//   const words = text.split(' ')
+
+//   $letter.innerText = words.length;
+// }
 
 const menClotheTemplate = (clothe) => {
   const template = clothe.map(

@@ -1,0 +1,203 @@
+[33mcommit 37e4aa936d382a8e771ecab07b7ca13019ccb8e5[m[33m ([m[1;36mHEAD -> [m[1;32mMain[m[33m, [m[1;31morigin/Main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 21 02:20:36 2022 +0600
+
+    added setClothe page and responsived
+
+[33mcommit ed54704631daab9ec5d8dcf6150dc2c7dab2ccf0[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Sun Nov 20 21:40:59 2022 +0600
+
+    changed fontSized
+
+[33mcommit 45d772a5a57f83257bb60273b9ddd0e6155e84ba[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Sun Nov 20 21:37:36 2022 +0600
+
+    added teamCategory Page and responsived
+
+[33mcommit 5b03be271a8182cd379c08ca656a03e8eabec4ff[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Fri Nov 18 18:17:25 2022 +0600
+
+    added fullSize image popUp with slider
+
+[33mcommit fd3633c4d89307e90904e0d071a5c22b92518ece[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Fri Nov 18 17:21:45 2022 +0600
+
+    added reviews and responsived
+
+[33mcommit 8bcff484ee678d88f1fa3ebd1205abe58251c46f[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Thu Nov 17 17:06:50 2022 +0600
+
+    added popUp for product page
+
+[33mcommit 8d4b47bc47fd28372efb04cc08a9f8de91634d52[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Thu Nov 17 14:56:06 2022 +0600
+
+    adaptived product page
+
+[33mcommit edb5fe063d6a2e4fe161ae37249aa5f9552e0fbe[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Wed Nov 16 19:08:31 2022 +0600
+
+    added product page, finished 60%
+
+[33mcommit 057d62fbee0cf3e066a66c7d96d1220c71d390e1[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Wed Nov 16 10:24:59 2022 +0600
+
+    changed class an img tag
+
+[33mcommit 0c40452364550256740f0c44ad62c73f7e00c566[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 19:01:43 2022 +0600
+
+    removed border-radius in 426px screen
+
+[33mcommit dcf7241129006ef5863b66759858d4dc588a30b7[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 18:58:52 2022 +0600
+
+    added team page and responsived
+
+[33mcommit b53906b887a8256e9b07ba2c1155eae4e6afcda8[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 15:09:48 2022 +0600
+
+    changed width at size block
+
+[33mcommit 40d632b4de4bfbff3dc259ea5ac37ea0dbce9fe2[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 14:52:34 2022 +0600
+
+    added clotheSize popUp for mobile
+
+[33mcommit cf1cdccf32b503d454a6b2b12fc5180a9f1dc668[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 08:45:57 2022 +0600
+
+    added popUp for clothes size
+
+[33mcommit 398585a71d20144c066d253e025753db43dd41bc[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 15 02:56:41 2022 +0600
+
+    added popUp for desktop/mobile versions
+
+[33mcommit 654aeeea7496bed319ef1c5300a109bbd722be82[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Fri Nov 11 19:04:21 2022 +0600
+
+    Added banner in special page and responsived
+
+[33mcommit 810b6f5c289ffbaa5ca349cc3d07beb4e78c08f3[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Fri Nov 11 15:59:12 2022 +0600
+
+    added filter blocks to left sidebar
+
+[33mcommit 1759f1de0d0e1b109c169bf6a1e6686c895d8992[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Thu Nov 10 17:28:13 2022 +0600
+
+    adaptived the rightSide container and inner cards
+
+[33mcommit c98cb10d3c170bea4547134015c504c8fe3355d5[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Thu Nov 10 13:26:37 2022 +0600
+
+    added men-clothes in rightSide container
+
+[33mcommit f8800ebb96054dfb3399663f88e2a8187a760a7a[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Thu Nov 10 00:22:28 2022 +0600
+
+    created men page and added sidebar
+
+[33mcommit 70d6e27959f989cee5c8eac8ffc86524ed2d64f1[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Wed Nov 9 16:20:53 2022 +0600
+
+    Finished main page
+
+[33mcommit 0c1a8f59cadc1852b19deb4bd1874affe369bd19[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Wed Nov 9 16:08:27 2022 +0600
+
+    adaptived footer in main page
+
+[33mcommit 99a8249812aecc2f4759f0cb1e3318d8dc182426[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Wed Nov 9 15:00:49 2022 +0600
+
+    added footer in main page
+
+[33mcommit 3e3fdc8f3ef81f5abf205cf7bce243bc24548e78[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 8 19:05:47 2022 +0600
+
+    added slider on mmobile
+
+[33mcommit bdda884d2a9e0004313572b6c860b2d03df8bd0f[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 8 14:57:04 2022 +0600
+
+    added slider in main page
+
+[33mcommit aca765a00924a04aa0da8145a384481bbd38277e[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Tue Nov 8 04:59:13 2022 +0600
+
+    added slider in main page
+
+[33mcommit 866a1229683345c6f714d333d428188e9c0a4359[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 7 22:51:45 2022 +0600
+
+    change backgrondColor on select
+
+[33mcommit a0df8d6103301c001c91e4693b2c9ba6e86e0c02[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 7 22:50:13 2022 +0600
+
+    added regist page and responsived
+
+[33mcommit bdcd8f905f17bf0a46678bfa042465dfbbcff54b[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 7 15:34:42 2022 +0600
+
+    improved mobile screen
+
+[33mcommit e69c4ddf522581cf46f3919aab16a33ff733b9da[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 7 15:01:34 2022 +0600
+
+    add
+
+[33mcommit 4b73a0e36058ead49b74b71bccdd3e98997adeb8[m
+Author: Эрлан Камбаров <erlankambarov94@gmail.com>
+Date:   Mon Nov 7 14:49:22 2022 +0600
+
+    fasfasf
+
+[33mcommit f3b99c5a7d568edd1fc5f84cc28090607e00595c[m
+Author: unknown <erlankambarov94@gmail.com>
+Date:   Wed Nov 2 19:21:14 2022 +0600
+
+    finished login page and responsived
+
+[33mcommit 3464349d99f104404836e20882b983c0327a3b58[m
+Author: unknown <erlankambarov94@gmail.com>
+Date:   Tue Nov 1 02:58:10 2022 +0600
+
+    added auth page
+
+[33mcommit 8fa9258e8dfd8e0ad42f3d22fcfa9501e69c3b1e[m
+Author: unknown <erlankambarov94@gmail.com>
+Date:   Mon Oct 31 13:24:15 2022 +0600
+
+    First commit
