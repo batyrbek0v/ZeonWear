@@ -549,6 +549,28 @@
         background-color: #171717;
       }
 
+      .mini-swiper-mobile {
+        margin-top: 16px;
+
+        .mini-swiper-wrapper {
+          padding-left: 12px;
+
+          .setClothes-mini-slide {
+            width: 60px;
+            height:64px;
+
+            @media (max-width:375px) {
+              width: 52px;
+              height: 52px;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
     }
 
   }

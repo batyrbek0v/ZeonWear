@@ -91,7 +91,7 @@ var swiper = new Swiper(".setClothesSwiper", {
 
 var swiper = new Swiper(".mini-swiper", {
   slidesPerView: 6,
-  spaceBetween: 0,
+  // spaceBetween: 0,
   spaceBetween: 10,
   centeredSlides: true,
   navigation: {
@@ -99,10 +99,21 @@ var swiper = new Swiper(".mini-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 var swiper = new Swiper(".setClothes-left-side-mobile", {
+
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
+  },
+});
+
+var swiper = new Swiper(".mini-swiper-mobile", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
