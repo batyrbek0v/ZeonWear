@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-.general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-next,
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number, .general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-next,
 .general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-prev, .general-news-container .news-container .news-container-pagination .news-pagination-block .news-current-pagination, .men-container.setClothesContainer .special-container.setClothes .men-rightSide.setClothesRight .setClothes-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div, .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block, .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div, .men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
 .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li {
   display: flex;
@@ -5791,6 +5791,14 @@ footer .footer-container {
   align-items: center;
   background-color: white;
 }
+.contract-container .contract-inner.marketPlace {
+  height: 3377px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner.marketPlace {
+    height: auto;
+  }
+}
 @media (max-width: 1441px) {
   .contract-container .contract-inner {
     width: 100%;
@@ -5808,6 +5816,37 @@ footer .footer-container {
   background: url(/assets/images/contract-banner-img.png);
   border-radius: 16px 16px 0 0;
   gap: 52px;
+}
+.contract-container .contract-inner .contract-banner.marketPlace {
+  background: url(/assets/images/market-place-banner.png);
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner.marketPlace {
+    height: 700px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.marketPlace {
+    height: 450px;
+    border-radius: 0;
+    background-position: center;
+  }
+}
+.contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content {
+  width: 834px;
+  height: 300px;
+  justify-content: flex-end;
+}
+@media (max-width: 850px) {
+  .contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 420px) {
+  .contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content h1 {
+    font-size: 28px;
+  }
 }
 @media (max-width: 890px) {
   .contract-container .contract-inner .contract-banner {
@@ -5860,6 +5899,20 @@ footer .footer-container {
   flex-direction: column;
   gap: 24px;
   margin-top: 91px;
+}
+.contract-container .contract-inner .contract-inner-title.marketPlace {
+  margin-top: 113px;
+}
+@media (max-width: 427px) {
+  .contract-container .contract-inner .contract-inner-title.marketPlace {
+    margin-top: 54px;
+  }
+  .contract-container .contract-inner .contract-inner-title.marketPlace:nth-child(3) {
+    padding: 0;
+  }
+  .contract-container .contract-inner .contract-inner-title.marketPlace:last-child {
+    padding: 0;
+  }
 }
 @media (max-width: 1441px) {
   .contract-container .contract-inner .contract-inner-title {
@@ -6036,6 +6089,108 @@ footer .footer-container {
   .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage:nth-child(3) {
     padding: 0;
   }
+}
+.contract-container .contract-inner .marketPlace-container {
+  width: 1082px;
+  margin-top: 72px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .marketPlace-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .marketPlace-container {
+    padding: 0 1rem;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper:nth-child(4) {
+  margin-top: 72px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper:nth-child(4) .marketPlace-block-top .marketPlace-block-top-title {
+  margin-top: 16px;
+}
+@media (max-width: 1025px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper {
+    gap: 0;
+    row-gap: 52px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+  width: 464px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 1025px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 769px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: auto;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number {
+  width: 64px;
+  height: 64px;
+  background-color: #054EDB;
+  border-radius: 16px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number p {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  line-height: 150%;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #171717;
+  margin-top: 8px;
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top p {
+    font-size: 18px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2B2B2B;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-container-border {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #D4E3FF;
+  margin-top: 60px;
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-container-border {
+    margin-top: 32px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .contract-inner-title.marketPlace {
+  margin-top: 64px;
 }
 .contract-container .contract-banner-2 {
   width: 1392px;
