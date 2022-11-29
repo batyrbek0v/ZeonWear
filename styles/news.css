@@ -30,8 +30,8 @@ a {
   text-decoration: none;
 }
 
-.general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-next,
-.general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-prev, .general-news-container .news-container .news-container-pagination .news-pagination-block .news-current-pagination, .men-container.setClothesContainer .special-container.setClothes .men-rightSide.setClothesRight .setClothes-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div, .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block, .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div, .men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number, .general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-next,
+.general-news-container .news-container .news-container-pagination .news-pagination-block .pagintion-block .news-prev, .general-news-container .news-container .news-container-pagination .news-pagination-block .news-current-pagination, .change-password-container, .general-profile-container .profile-container .profile-container-inner .profile-img-block .profile-img, .men-container.setClothesContainer .special-container.setClothes .men-rightSide.setClothesRight .setClothes-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .overley .clothes-size-container .clothes-size-table .size-code-block .sizes-container .sizes-block div, .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block, .menMore-container .menMore-bottom-swiper-container .swiper.menMore-swipper .swiper-wrapper-cards .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom div, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom div, .men-container .men-rightSide .men-template-container .men-clothe-block .men-clothe-top-isNew .men-clothe-new-block, .men-container .men-rightSide .main-category-block .main-category-btn, .container .container-inner .bullet-block, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler label, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block, .nav-container .nav-bottom-block .nav-bottom-icon-list li, .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list li,
 .nav-container .nav-bottom-block .nav-bottom .nav-bottom-list2 li {
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ a {
   align-items: center;
 }
 
-.setClothesMore #posting-application .posting-applition-form .posting-block .posting-btn, .setClothesMore #posting-application .posting-applition-form .posting-input, .setClothesMore .setClothesMore-inner .setClothes-inner-wrapper .setClothes-right-side .right-side-mobile-btn button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-size-block .men-filter-size-btns button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .left-sort label input,
+.contract-container .contract-banner-2 .contract-banner2-content button, .contract-container .contract-inner .contract-banner .contract-bunner-btn, .change-password-container .change-password-block .change-password-form .change-passoword-btn, .change-password-container .change-password-block .change-password-form .change-password-input-block input, .general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password .go-to-change-password, .general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-btn, .general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box .profile-form-flex select, .general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-input, .setClothesMore #posting-application .posting-applition-form .posting-block .posting-btn, .setClothesMore #posting-application .posting-applition-form .posting-input, .setClothesMore .setClothesMore-inner .setClothes-inner-wrapper .setClothes-right-side .right-side-mobile-btn button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-size-block .men-filter-size-btns button, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .left-sort label input,
 .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block .men-filter-sort-block .right-sort label input, .special .filter-modal-mobile .men-sidebar-filter-block .men-filter-block label .men-filter-search, .menMore-reviews-container .menMore-reviews-inner .reviews-card-wrapper .menMore-more-review-block button, .menMore-reviews-container .menMore-reviews-inner .menMore-reviews-inner-top button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-price-bottom button, .menMore-container .menMore-inner #menMore-sidebar .menMore-sidebar-filter-block .menMore-filter-block .menMore-filter-size-block .menMore-filter-size-btns button, .menMore-container .menMore-inner .menMore-product-container .menMore-description-block .menMore-price-bottom button, .men-container .men-rightSide .main-category-block .main-category-btn, .men-container #men-sidebar .men-filter-block .men-filter-size-block .men-filter-size-btns button, .men-container #men-sidebar .men-filter-block .men-filter-sort-block .left-sort label input,
 .men-container #men-sidebar .men-filter-block .men-filter-sort-block .right-sort label input, .men-container #men-sidebar .men-filter-block label .men-filter-search, .container .container-inner .main-category-block .main-category-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .regist-handler-block .regist-handler .regist-handler-btn, .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .auth-input,
 .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .right-side-regist-form .form-block .auth-input, .regist-container .regist-container-inner .auth-block-container .auth-block .auth-form .left-side-regist-form .form-block .regist-form-select,
@@ -5428,6 +5428,384 @@ footer .footer-container {
   color: #8B96B1;
 }
 
+.general-profile-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5.4rem;
+}
+@media (max-width: 1441px) {
+  .general-profile-container {
+    padding: 0 2rem;
+    gap: 32px;
+  }
+}
+@media (max-width: 769px) {
+  .general-profile-container {
+    padding: 0rem;
+  }
+}
+.general-profile-container #profile-sidebar {
+  width: 336px;
+  height: 376px;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border-radius: 16px;
+}
+@media (max-width: 1441px) {
+  .general-profile-container #profile-sidebar {
+    width: auto;
+  }
+}
+@media (max-width: 1025px) {
+  .general-profile-container #profile-sidebar {
+    display: none;
+  }
+}
+.general-profile-container #profile-sidebar .news-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.general-profile-container #profile-sidebar .news-list li {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.2s;
+  padding-left: 10px;
+  padding: 12px;
+  border-radius: 12px;
+}
+.general-profile-container #profile-sidebar .news-list li:hover {
+  background-color: #F6F9FF;
+}
+.general-profile-container #profile-sidebar .news-list li a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #171717;
+}
+.general-profile-container #profile-sidebar .news-list li a.active {
+  color: #054EDB;
+}
+.general-profile-container .profile-container {
+  width: 1496px;
+  height: 835px;
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: white;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container {
+    width: auto;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+}
+.general-profile-container .profile-container .news-container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .news-container-title {
+    gap: 6px;
+  }
+}
+.general-profile-container .profile-container .news-container-title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #171717;
+}
+.general-profile-container .profile-container .news-container-title .news-container-title-routes a {
+  color: #98949E;
+  font-size: 14px;
+  font-weight: 500;
+}
+.general-profile-container .profile-container .profile-container-inner {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+  margin-top: 26px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block {
+  width: 192px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner .profile-img-block {
+    width: 80%;
+  }
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block .profile-img {
+  width: 100%;
+  height: 192px;
+  border-radius: 16px;
+  border: 1px solid #CDDAF1;
+  background: #FBFCFF;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block .profile-img .profile-avatar {
+  width: 53px;
+  height: 60px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block .profile-img .profile-avatar.added-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block .upload-photo {
+  display: flex;
+  gap: 10px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-img-block .upload-photo p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #054EDB;
+  cursor: pointer;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block {
+  width: 668px;
+  display: flex;
+  height: auto;
+  gap: 36px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner .profile-form-block {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form {
+  width: 316px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form {
+    width: 100%;
+  }
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #171717;
+  text-transform: uppercase;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-input {
+  height: 44px;
+  color: #171717;
+  font-weight: 500;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-input::placeholder {
+  color: #8B96B1;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .label-flex {
+  display: flex;
+  gap: 8px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .m-top {
+  margin-top: 10px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4px;
+  gap: 12px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box label {
+  font-size: 13px;
+  font-size: 500;
+  color: #171717;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box .profile-form-flex {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box .profile-form-flex input {
+  width: 70px;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-box .profile-form-flex select {
+  flex-grow: 1;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-btn {
+  border: 0;
+  outline: 0;
+  transition: 0.2s;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .proile-form .profile-form-btn:hover {
+  background: #8B96B1;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password {
+  width: 316px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password {
+    width: auto;
+    height: auto;
+  }
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password h1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #171717;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #171717;
+}
+.general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password .go-to-change-password {
+  width: 62%;
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px 8px 16px;
+  color: white;
+  background-color: #054EDB;
+  flex-grow: 1;
+  margin-top: 4px;
+  cursor: pointer;
+}
+@media (max-width: 426px) {
+  .general-profile-container .profile-container .profile-container-inner .profile-form-block .profile-change-password .go-to-change-password {
+    width: auto;
+    height: 44px;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.change-password-container {
+  width: 100%;
+  min-height: 80vh;
+}
+.change-password-container .change-password-block {
+  width: 363px;
+  height: 427px;
+  background-color: white;
+  padding: 1.5rem;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 426px) {
+  .change-password-container .change-password-block {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+@media (max-width: 376px) {
+  .change-password-container .change-password-block {
+    padding: 0 1rem;
+  }
+}
+.change-password-container .change-password-block .change-password-heading h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #171717;
+}
+.change-password-container .change-password-block .change-password-form {
+  width: 100%;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+@media (max-width: 426px) {
+  .change-password-container .change-password-block .change-password-form {
+    width: 100%;
+  }
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block {
+  position: relative;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block:nth-child(2) {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block:nth-child(3) .change-password-icon {
+  top: 15px;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #171717;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block input {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block input::placeholder {
+  font-size: 14px;
+  color: #8B96B1;
+}
+.change-password-container .change-password-block .change-password-form .change-password-input-block .change-password-icon {
+  position: absolute;
+  top: 47px;
+  right: 20px;
+  cursor: pointer;
+}
+.change-password-container .change-password-block .change-password-form .change-passoword-btn {
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.change-password-container .change-password-block .change-password-form .change-passoword-btn:hover {
+  opacity: 0.8;
+}
+.change-password-container .change-password-block .change-password-form a {
+  color: #8B96B1;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
 @media (max-width: 1441px) {
   .nav.news-nav {
     padding-right: 2rem;
@@ -5455,7 +5833,7 @@ footer .footer-container {
 .general-news-container #news-sidebar {
   width: 336px;
   height: 376px;
-  padding: 2.9rem 2.2rem;
+  padding: 2rem 1.5rem;
   background-color: white;
   border-radius: 16px;
 }
@@ -5476,9 +5854,17 @@ footer .footer-container {
   justify-content: space-between;
 }
 .general-news-container #news-sidebar .news-list li {
+  height: 44px;
   display: flex;
   align-items: center;
   gap: 16px;
+  transition: 0.2s;
+  padding-left: 10px;
+  padding: 12px;
+  border-radius: 12px;
+}
+.general-news-container #news-sidebar .news-list li:hover {
+  background-color: #F6F9FF;
 }
 .general-news-container #news-sidebar .news-list li a {
   font-weight: 500;
@@ -5749,6 +6135,563 @@ footer .footer-container {
 
 .footer-container.news {
   margin-top: 32px;
+}
+
+.nav.contractor {
+  width: 77.5%;
+}
+@media (max-width: 1441px) {
+  .nav.contractor {
+    width: auto;
+  }
+}
+@media (max-width: 1441px) {
+  .nav.contractor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.contract-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1441px) {
+  .contract-container {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .contract-container {
+    padding: 0;
+  }
+}
+.contract-container .contract-inner {
+  width: 68.7%;
+  height: 1646px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.contract-container .contract-inner.marketPlace {
+  height: 3377px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner.marketPlace {
+    height: auto;
+  }
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner {
+    width: 100%;
+    height: auto;
+  }
+}
+.contract-container .contract-inner .contract-banner {
+  position: relative;
+  width: 100%;
+  height: 697px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/assets/images/contract-banner-img.png);
+  border-radius: 16px 16px 0 0;
+  gap: 52px;
+}
+.contract-container .contract-inner .contract-banner.marketPlace {
+  background: url(/assets/images/market-place-banner.png);
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner.marketPlace {
+    height: 700px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.marketPlace {
+    height: 450px;
+    border-radius: 0;
+    background-position: center;
+  }
+}
+.contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content {
+  width: 834px;
+  height: 300px;
+  justify-content: flex-end;
+}
+@media (max-width: 850px) {
+  .contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 420px) {
+  .contract-container .contract-inner .contract-banner.marketPlace .contract-banner-content h1 {
+    font-size: 28px;
+  }
+}
+.contract-container .contract-inner .contract-banner.rent {
+  background: url(/assets/images/rent-banner-img.png);
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner.rent {
+    height: 700px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.rent {
+    height: 450px;
+    border-radius: 0;
+    background-position: center;
+  }
+}
+.contract-container .contract-inner .contract-banner.rent .contract-banner-content {
+  width: 834px;
+  height: 300px;
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  .contract-container .contract-inner .contract-banner.rent .contract-banner-content {
+    width: auto;
+    height: auto;
+  }
+}
+.contract-container .contract-inner .contract-banner.rent .contract-banner-content h1 {
+  margin-top: 54px;
+}
+@media (max-width: 420px) {
+  .contract-container .contract-inner .contract-banner.rent .contract-banner-content h1 {
+    font-size: 28px;
+  }
+}
+.contract-container .contract-inner .contract-banner.about {
+  background: url(/assets/images/about-banner-img.png);
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.about {
+    height: 650px;
+    border-radius: 0;
+    background-position: 25%;
+  }
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner {
+    height: 700px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner {
+    border-radius: 0;
+    background-position: center;
+  }
+}
+.contract-container .contract-inner .contract-banner .contract-banner-content {
+  width: 834px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .contract-container .contract-inner .contract-banner .contract-banner-content {
+    width: auto;
+  }
+}
+.contract-container .contract-inner .contract-banner .contract-banner-content h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner .contract-banner-content h1 {
+    font-size: 38px;
+  }
+}
+.contract-container .contract-inner .contract-banner .contract-bunner-btn {
+  width: 257px;
+  height: 56px;
+  color: white;
+  border: 0;
+  padding: 8px 24px;
+  font-size: 16px;
+  background-color: black;
+}
+.contract-container .contract-inner .contract-inner-title {
+  width: 1082px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 91px;
+}
+.contract-container .contract-inner .contract-inner-title.marketPlace {
+  margin-top: 113px;
+}
+@media (max-width: 427px) {
+  .contract-container .contract-inner .contract-inner-title.marketPlace {
+    margin-top: 54px;
+  }
+  .contract-container .contract-inner .contract-inner-title.marketPlace:nth-child(3) {
+    padding: 0;
+  }
+  .contract-container .contract-inner .contract-inner-title.marketPlace:last-child {
+    padding: 0;
+  }
+}
+.contract-container .contract-inner .contract-inner-title.rent {
+  margin-top: 113px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .contract-inner-title {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .contract-inner-title {
+    padding: 0 1rem;
+  }
+}
+.contract-container .contract-inner .contract-inner-title h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #171717;
+}
+@media (max-width: 550px) {
+  .contract-container .contract-inner .contract-inner-title h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .contract-inner-title h1 {
+    font-size: 28px;
+  }
+}
+.contract-container .contract-inner .contract-inner-title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2B2B2B;
+}
+.contract-container .contract-inner .contract-advantage-container {
+  width: 1238px;
+  margin-top: 60px;
+  padding-left: 56px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .contract-advantage-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .contract-advantage-container {
+    padding: 0 1rem;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-title {
+  padding-left: 1.3rem;
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-title.rent {
+  margin-top: 40px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-title {
+    width: 100%;
+    padding: 0;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-title h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #054EDB;
+}
+@media (max-width: 550px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-title h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-title h1 {
+    font-size: 24px;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper {
+  display: flex;
+  padding-left: 1.3rem;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 640px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper {
+    justify-content: flex-start;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage {
+  width: 400px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage {
+    width: auto;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage {
+    height: auto;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-top {
+  width: 144px;
+  display: flex;
+  flex-direction: column;
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-top h1 {
+  font-weight: 800;
+  font-size: 112px;
+  line-height: 100%;
+  color: #171717;
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-top h1 {
+    font-size: 72px;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-top p {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: #171717;
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-content {
+  width: 262px;
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-content {
+    width: 100%;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage .contract-advantage-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2B2B2B;
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage:nth-child(2) {
+  padding-left: 0.75rem;
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage:nth-child(2) {
+    padding: 0;
+  }
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage:nth-child(3) {
+  padding-left: 1.5rem;
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-advantage-container .contract-advantage-wrapper .contract-advantage:nth-child(3) {
+    padding: 0;
+  }
+}
+.contract-container .contract-inner .marketPlace-container {
+  width: 1082px;
+  margin-top: 72px;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-inner .marketPlace-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .marketPlace-container {
+    padding: 0 1rem;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper:nth-child(4) {
+  margin-top: 72px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper:nth-child(4) .marketPlace-block-top .marketPlace-block-top-title {
+  margin-top: 16px;
+}
+@media (max-width: 1025px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper {
+    gap: 0;
+    row-gap: 52px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+  width: 464px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 1025px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 769px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block {
+    width: auto;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number {
+  width: 64px;
+  height: 64px;
+  background-color: #054EDB;
+  border-radius: 16px;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number p {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  line-height: 150%;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #171717;
+  margin-top: 8px;
+}
+@media (max-width: 376px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top p {
+    font-size: 18px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2B2B2B;
+}
+.contract-container .contract-inner .marketPlace-container .marketPlace-container-border {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #D4E3FF;
+  margin-top: 60px;
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .marketPlace-container .marketPlace-container-border {
+    margin-top: 32px;
+  }
+}
+.contract-container .contract-inner .marketPlace-container .contract-inner-title.marketPlace {
+  margin-top: 64px;
+}
+.contract-container .contract-banner-2 {
+  width: 1392px;
+  height: 624px;
+  display: flex;
+  align-items: center;
+  background: url(/assets/images/contract-banner-img2.png);
+  padding-left: 8.4rem;
+}
+@media (max-width: 1441px) {
+  .contract-container .contract-banner-2 {
+    width: 100%;
+    background-position: right;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .contract-container .contract-banner-2 {
+    background: url(/assets/images/contract-banner-img2-mini.png) cover;
+    background-position: 80%;
+    height: 609px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-banner-2 {
+    margin-top: 32px;
+  }
+}
+.contract-container .contract-banner-2 .contract-banner2-content {
+  width: 452px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 80px;
+}
+.contract-container .contract-banner-2 .contract-banner2-content h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #171717;
+}
+@media (max-width: 550px) {
+  .contract-container .contract-banner-2 .contract-banner2-content h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-banner-2 .contract-banner2-content h1 {
+    font-size: 24px;
+  }
+}
+.contract-container .contract-banner-2 .contract-banner2-content button {
+  width: 187px;
+  height: 56px;
+  font-size: 16px;
+  padding: 8px 24px;
+  background-color: #054EDB;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contract-container .contract-banner-2 .contract-banner2-content button:hover {
+  background-color: #042f85;
 }
 
 /*# sourceMappingURL=news.css.map */
