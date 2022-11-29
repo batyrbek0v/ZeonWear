@@ -5848,6 +5848,40 @@ footer .footer-container {
     font-size: 28px;
   }
 }
+.contract-container .contract-inner .contract-banner.rent {
+  background: url(/assets/images/rent-banner-img.png);
+}
+@media (max-width: 890px) {
+  .contract-container .contract-inner .contract-banner.rent {
+    height: 700px;
+  }
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.rent {
+    height: 450px;
+    border-radius: 0;
+    background-position: center;
+  }
+}
+.contract-container .contract-inner .contract-banner.rent .contract-banner-content {
+  width: 834px;
+  height: 300px;
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  .contract-container .contract-inner .contract-banner.rent .contract-banner-content {
+    width: auto;
+    height: auto;
+  }
+}
+.contract-container .contract-inner .contract-banner.rent .contract-banner-content h1 {
+  margin-top: 54px;
+}
+@media (max-width: 420px) {
+  .contract-container .contract-inner .contract-banner.rent .contract-banner-content h1 {
+    font-size: 28px;
+  }
+}
 @media (max-width: 890px) {
   .contract-container .contract-inner .contract-banner {
     height: 700px;
@@ -5914,6 +5948,9 @@ footer .footer-container {
     padding: 0;
   }
 }
+.contract-container .contract-inner .contract-inner-title.rent {
+  margin-top: 113px;
+}
 @media (max-width: 1441px) {
   .contract-container .contract-inner .contract-inner-title {
     width: 100%;
@@ -5969,6 +6006,9 @@ footer .footer-container {
 }
 .contract-container .contract-inner .contract-advantage-container .contract-advantage-title {
   padding-left: 1.3rem;
+}
+.contract-container .contract-inner .contract-advantage-container .contract-advantage-title.rent {
+  margin-top: 40px;
 }
 @media (max-width: 1441px) {
   .contract-container .contract-inner .contract-advantage-container .contract-advantage-title {
