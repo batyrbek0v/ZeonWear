@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/news.css">
-  <title>Новости</title>
+  <link rel="stylesheet" href="/styles/profile.css">
+  <title>Профиль</title>
 </head>
 
 <body>
@@ -26,16 +26,16 @@
     </nav>
   </header>
   <main>
-    <div class="general-news-container">
-      <aside id="news-sidebar">
+    <div class="general-profile-container">
+      <aside id="profile-sidebar">
         <ul class="news-list">
           <li>
-            <img src="/assets/icons/user.svg" alt="user-icon">
-            <a href="/pages/Profile/Profile.html">Профиль</a>
+            <img src="/assets/icons/user-blue.svg" alt="user-icon">
+            <a href="/" class="active">Профиль</a>
           </li>
           <li>
-            <img src="/assets/icons/papers.svg" alt="paper-icon">
-            <a href="" class="active">Новости</a>
+            <img src="/assets/icons/papers-not-blue.svg" alt="paper-icon">
+            <a href="/pages/news.html">Новости</a>
           </li>
           <li>
             <img src="/assets/icons/heart-fill.svg" alt="heart-icon">
@@ -55,30 +55,91 @@
           </li>
         </ul>
       </aside>
-      <div class="news-container">
+      <div class="profile-container">
         <div class="news-container-title">
-          <h1>Новости</h1>
+          <h1>Профиль</h1>
           <div class="news-container-title-routes">
             <a href="/index.html">Главная /</a>
-            <a href="/">Новости</a>
+            <a href="/">Профиль</a>
           </div>
         </div>
-        <div class="news-container-inner">
-          <div class="news-container-wrapper1">
-            <!-- НОВОСТИ-РЕНДЕРЕТСЯ-В-JS -->
+        <div class="profile-container-inner">
+          <div class="profile-img-block">
+            <div class="profile-img">
+              <img src="/assets/icons/user.svg" alt="" class="profile-avatar">
+            </div>
+            <div class="upload-photo">
+              <img src="/assets/icons/photoapparat.svg" alt="avatar-icon">
+              <p class="upload-photo-btn">Загрузить фото</p>
+            </div>
           </div>
-          <div class="news-container-wrapper2">
-            <!-- НОВОСТИ-РЕНДЕРЕТСЯ-В-JS -->
-          </div>
-        </div>
-        <div class="news-container-pagination">
-          <div class="news-pagination-block">
-            <p>Страница</p>
-            <div class="news-current-pagination">1</div>
-            <p>из 85</p>
-            <div class="pagintion-block">
-              <div class="news-next"><img src="/assets/icons/prev-white.svg" alt=""></div>
-              <div class="news-prev"><img src="/assets/icons/next-white.svg" alt=""></div>
+          <div class="profile-form-block">
+            <form class="proile-form">
+              <h1>Обо мне</h1>
+              <label>
+                <input type="text" class="profile-input" placeholder="Имя *">
+              </label>
+              <label>
+                <input type="text" class="profile-input" placeholder="Фамилия *">
+              </label>
+              <label>
+                <input type="text" class="profile-input" placeholder="e-mail *">
+              </label>
+              <div class="profile-form-box">
+                <label>Дата рождения</label>
+                <div class="profile-form-flex">
+                  <input type="text" class="profile-input" placeholder="День">
+                  <select>
+                    <option disabled selected hidden>Месяц</option>
+                    <option>Январь</option>
+                    <option>Февраль</option>
+                    <option>Март</option>
+                    <option>Апрель</option>
+                    <option>Май</option>
+                    <option>Июнь</option>
+                    <option>Июль</option>
+                    <option>Август</option>
+                    <option>Сетябрь</option>
+                    <option>Октябрь</option>
+                    <option>Ноябрь</option>
+                    <option>Декабрь</option>
+                  </select>
+                  <input type="text" class="profile-input" placeholder="Год">
+                </div>
+              </div>
+              <label class="m-top">
+                <select class="profile-input">
+                  <option disabled selected hidden>Пол</option>
+                  <option>Мужчина</option>
+                  <option>Женщина</option>
+                </select>
+              </label>
+              <label>
+                <input type="text" class="profile-input" placeholder="Область">
+              </label>
+              <label>
+                <input type="text" class="profile-input" placeholder="Ваш город">
+              </label>
+              <label>
+                <input type="text" class="profile-input" placeholder="Улица">
+              </label>
+              <label class="label-flex">
+                <input type="text" class="profile-input" placeholder="Дом *">
+                <input type="text" class="profile-input" placeholder="Квартира">
+              </label>
+              <button class="profile-form-btn">Сохранить</button>
+            </form>
+            <div class="profile-change-password">
+              <h1>Пароль</h1>
+              <p>
+                Чтобы изменить пароль, сначала проверьте подлинность текущего. Затем создайте пароль, который вы не
+                используете в других местах, и обязательно регулярно его меняйте, особенно когда подозреваете, что он
+                был взломан.
+              </p>
+              <button class="go-to-change-password">
+                <img src="/assets/icons/lock.svg" alt="key-lock-icon">
+                Изменить пароль
+              </button>
             </div>
           </div>
         </div>
@@ -163,7 +224,7 @@
       </div>
     </div>
   </footer>
-  <script src="/JS/news.js"></script>
+  <script src="/JS/Profile.js"></script>
 </body>
 
 </html>
