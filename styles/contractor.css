@@ -5882,6 +5882,16 @@ footer .footer-container {
     font-size: 28px;
   }
 }
+.contract-container .contract-inner .contract-banner.about {
+  background: url(/assets/images/about-banner-img.png);
+}
+@media (max-width: 426px) {
+  .contract-container .contract-inner .contract-banner.about {
+    height: 650px;
+    border-radius: 0;
+    background-position: 25%;
+  }
+}
 @media (max-width: 890px) {
   .contract-container .contract-inner .contract-banner {
     height: 700px;

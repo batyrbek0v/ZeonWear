@@ -127,6 +127,16 @@
         }
       }
 
+      &.about {
+        background: url(/assets/images/about-banner-img.png);
+
+        @media (max-width:426px) {
+          height: 650px;
+          border-radius: 0;
+          background-position: 25%;
+        }
+      }
+
       @media (max-width:890px) {
         height: 700px;
       }
