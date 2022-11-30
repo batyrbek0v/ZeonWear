@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number, .order-history-container .order-container .order-accepted .order-show-hide-btn-block button,
+.contract-container .contract-inner .marketPlace-container .marketPlace-wrapper .marketPlace-block .marketPlace-block-top .marketPlace-number, .constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper .const-filter-color, .order-history-container .order-container .order-accepted .order-show-hide-btn-block button,
 .order-history-container .order-container .order-delivered .order-show-hide-btn-block button,
 .order-history-container .order-container .order-processing .order-show-hide-btn-block button,
 .order-history-container .order-container .order-return .order-show-hide-btn-block button, .order-history-container .order-container .order-accepted .order-show-hide-btn-block,
@@ -53,7 +53,8 @@ a {
   align-items: center;
 }
 
-.contract-container .contract-banner-2 .contract-banner2-content button, .contract-container .contract-inner .contract-banner .contract-bunner-btn, .order-history-container .order-container .order-accepted .order-show-hide-btn-block button,
+.contract-container .contract-banner-2 .contract-banner2-content button, .contract-container .contract-inner .contract-banner .contract-bunner-btn, .constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block button, .constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-btns button, .constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .left-sort label input,
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .right-sort label input, .constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block label .const-filter-search, .order-history-container .order-container .order-accepted .order-show-hide-btn-block button,
 .order-history-container .order-container .order-delivered .order-show-hide-btn-block button,
 .order-history-container .order-container .order-processing .order-show-hide-btn-block button,
 .order-history-container .order-container .order-return .order-show-hide-btn-block button, .order-history-container .order-container .order-accepted .order-inner .order-total .order-tota-bottom button,
@@ -7350,6 +7351,686 @@ footer .footer-container {
   }
 }
 
+.nav.support-nav {
+  padding: 1.5rem 6rem;
+}
+@media (max-width: 1025px) {
+  .nav.support-nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.general-news-container {
+  padding: 0 6rem;
+  padding-right: 6.2rem;
+}
+.general-news-container.support-general-container {
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 1025px) {
+  .general-news-container.support-general-container {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 426px) {
+  .general-news-container.support-general-container {
+    padding: 0 1rem;
+  }
+}
+.general-news-container.support-general-container .support-news-container {
+  width: 1496px;
+  height: 304px;
+  height: auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 16px;
+}
+.general-news-container.support-general-container .support-news-container.active {
+  height: auto;
+}
+@media (max-width: 1025px) {
+  .general-news-container.support-general-container .support-news-container {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 426px) {
+  .general-news-container.support-general-container .support-news-container {
+    padding: 0;
+  }
+}
+.general-news-container.support-general-container .support-news-container .news-container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2px;
+}
+@media (max-width: 426px) {
+  .general-news-container.support-general-container .support-news-container .news-container-title {
+    gap: 6px;
+  }
+}
+.general-news-container.support-general-container .support-news-container .news-container-title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #171717;
+}
+.general-news-container.support-general-container .support-news-container .news-container-title .news-container-title-routes a {
+  color: #98949E;
+  font-size: 14px;
+  font-weight: 500;
+}
+.general-news-container.support-general-container .support-accardion-container {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #D4E3FF;
+  border-bottom: 1px solid #D4E3FF;
+  margin-top: 28px;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion {
+  position: relative;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion:not(:first-child) {
+  border-top: 1px solid #D4E3FF;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion.active .supppot-accardion-content {
+  height: 250px;
+}
+@media (max-width: 1441px) {
+  .general-news-container.support-general-container .support-accardion-container .support-accardion.active .supppot-accardion-content {
+    height: 350px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+  }
+  .general-news-container.support-general-container .support-accardion-container .support-accardion.active .supppot-accardion-content::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #b3cdfd;
+    border-radius: 5px;
+    height: 4px;
+    border-radius: 50px;
+  }
+  .general-news-container.support-general-container .support-accardion-container .support-accardion.active .supppot-accardion-content::-webkit-scrollbar {
+    width: 3px;
+    height: 3.5px;
+    background-color: #EAEEF4;
+  }
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion.active .support-accardion-label img {
+  transform: rotate(180deg);
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion .support-accardion-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion .support-accardion-label p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #171717;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion .support-accardion-label img {
+  transition: 0.3s;
+}
+.general-news-container.support-general-container .support-accardion-container .support-accardion .supppot-accardion-content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+@media (max-width: 1441px) {
+  .nav.const-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.constructor-general-container {
+  width: 100%;
+  height: 100%;
+  height: 1349px;
+  display: flex;
+  justify-content: center;
+  padding: 0 3.3rem;
+}
+@media (max-width: 1441px) {
+  .constructor-general-container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 426px) {
+  .constructor-general-container {
+    padding: 0;
+  }
+}
+.constructor-general-container .constructor-flex {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1441px) {
+  .constructor-general-container .constructor-flex {
+    padding: 0rem;
+  }
+}
+@media (max-width: 1200px) {
+  .constructor-general-container .constructor-flex {
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.constructor-general-container .constructor-flex #constructor-sidebar {
+  width: 336px;
+  height: 808px;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow-y: auto;
+}
+@media (max-width: 1200px) {
+  .constructor-general-container .constructor-flex #constructor-sidebar {
+    display: none;
+  }
+}
+.constructor-general-container .constructor-flex #constructor-sidebar::-webkit-scrollbar {
+  width: 4px;
+  background-color: #EAEEF4;
+  border-radius: 50px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar::-webkit-scrollbar-thumb {
+  background: #BED1F5;
+  border-radius: 50px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper {
+  width: 100%;
+  margin-top: 6px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper .const-sidebar-filter-title {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper .const-sidebar-filter-title h1 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper .const-sidebar-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper .const-sidebar-filter-list label {
+  font-size: 13px;
+  color: #171717;
+  display: flex;
+  gap: 12px;
+  padding-left: 2px;
+  font-weight: 500;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-sidebar-list-wrapper .const-sidebar-filter-list label .const-sidebar-filter-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #171717;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-sidebar-filter-title {
+  display: flex;
+  gap: 10px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-sidebar-filter-title p {
+  font-size: 15px;
+  color: #171717;
+  font-weight: 600;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block label .const-filter-search {
+  margin-top: 9px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block label .const-filter-search::placeholder {
+  font-size: 13px;
+  color: #8B96B1;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block {
+  width: 228px;
+  display: flex;
+  gap: 16px;
+  margin-top: 11px;
+}
+@media (max-width: 1400px) {
+  .constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block {
+    width: 100%;
+  }
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .left-sort label,
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .right-sort label {
+  color: #98949E;
+  font-size: 13px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .left-sort label input,
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-sort-block .right-sort label input {
+  height: 36px;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  margin-top: 4px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries {
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries div {
+  width: 34px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries div:not(:last-child) {
+  border-right: 1px solid #98949E;
+  border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries div span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8B96B1;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries div span:hover {
+  color: #054EDB;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-countries div span.active {
+  color: #054EDB;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  gap: 16px 8px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-btns button {
+  width: 48px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  color: #171717;
+  transition: 0.2s ease-in-out;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block .const-filter-size-btns button:hover {
+  background-color: #054EDB;
+  border: 1px solid #054EDB;
+  color: white;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-size-block p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #054EDB;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 14px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-sidebar-filter-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 14px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-sidebar-filter-list label {
+  font-size: 13px;
+  color: #171717;
+  display: flex;
+  gap: 12px;
+  padding-left: 2px;
+  font-weight: 500;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-sidebar-filter-list label .const-sidebar-filter-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #171717;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  row-gap: 24px;
+  margin-top: 10px;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper .const-filter-color {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper .const-filter-color:nth-child(4) {
+  border: 1px solid #BED1F5;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper .const-filter-color::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -3.5px;
+  border: 1px solid #BED1F5;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.constructor-general-container .constructor-flex #constructor-sidebar .const-sidebar-filter-block .const-filter-block .const-filter-color-wrapper .const-filter-color:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+.constructor-general-container .constructor-flex .constructor-form-container {
+  width: 1109px;
+  height: 808px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-top: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  .constructor-general-container .constructor-flex .constructor-form-container {
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+  }
+}
+.constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2px;
+  padding-left: 2rem;
+}
+@media (max-width: 426px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title {
+    gap: 6px;
+  }
+}
+.constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #171717;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title .news-container-title-routes a {
+  color: #98949E;
+  font-size: 14px;
+  font-weight: 500;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 40px;
+  margin: 60px auto;
+  gap: 10px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
+  width: 769px;
+  width: 100%;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .next-prev-btns {
+  top: 60%;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit {
+  width: 960px;
+  height: 206px;
+  display: flex;
+  align-items: flex-end;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit {
+  width: 136px;
+  height: 136px;
+  opacity: 0.5;
+  position: relative;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit img {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  bottom: 0;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit.swiper-slide-prev,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit .swiper-slide-next {
+  opacity: 0.7;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit.swiper-slide-prev img,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit .swiper-slide-next img {
+  width: 156px;
+  height: 156px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit.swiper-slide-active {
+  opacity: 1;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .swiper-outfit .slide-outfit.swiper-slide-active img {
+  width: 206px;
+  height: 206px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short {
+  width: 1000px;
+  height: 136px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper {
+  width: 650px;
+  width: 100%;
+  height: 86px;
+  background-color: white;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .slide-outfit-short {
+  width: 136px;
+  height: 136px;
+  opacity: 0.5;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .slide-outfit-short img {
+  width: 86px;
+  height: 86px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-prev,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-next {
+  opacity: 0.7;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-prev img,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-next img {
+  width: 104px;
+  height: 104px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper .swiper-slide-active img {
+  width: 132px;
+  height: 132px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot {
+  width: 100%;
+  height: 135px;
+  position: relative;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper {
+  width: 100%;
+  height: 136px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .slide-foot {
+  width: 136px;
+  height: 136px;
+  opacity: 0.5;
+  position: relative;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .slide-foot img {
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  bottom: 110px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-prev,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-next {
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-prev img,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-next img {
+  position: absolute;
+  bottom: 70px;
+  width: 104px;
+  height: 104px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-active {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper .swiper-slide-active img {
+  position: absolute;
+  bottom: 0px;
+  width: 134px;
+  height: 134px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button-prev::after,
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button-next::after {
+  display: none;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button {
+  width: 17px;
+  height: 14px;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button svg {
+  width: 100%;
+  height: 100%;
+}
+.constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button:hover svg path {
+  fill: black;
+}
+.constructor-general-container .constructor-flex .constructor-form-description {
+  width: 363px;
+  height: 698px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem 1.5rem;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .constructor-general-container .constructor-flex .constructor-form-description {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 426px) {
+  .constructor-general-container .constructor-flex .constructor-form-description {
+    padding: 0 1rem;
+  }
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block {
+  width: 100%;
+  height: 73px;
+  padding-top: 2px;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block.counter {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block:last-child {
+  height: 152px;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block h1 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8B96B1;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block button {
+  background-color: #000000;
+  color: white;
+  border: 0;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block .constructor-form-description-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block .constructor-form-description-content:nth-child(3) {
+  margin-top: 6px;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block .constructor-form-description-content p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #171717;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block .constructor-form-description-content span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B96B1;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-block .constructor-form-description-input input {
+  width: 100%;
+  height: 6px;
+  border: 0;
+  accent-color: #FD9B08;
+  background-color: #EAEEF4;
+  cursor: pointer;
+}
+.constructor-general-container .constructor-flex .constructor-form-description .constructor-form-description-line {
+  width: 100%;
+  height: 1px;
+  background-color: #D4E3FF;
+}
+
 .nav.contractor {
   width: 77.5%;
 }
@@ -7907,4 +8588,4 @@ footer .footer-container {
   background-color: #042f85;
 }
 
-/*# sourceMappingURL=orderHistory.css.map */
+/*# sourceMappingURL=constructor.css.map */
