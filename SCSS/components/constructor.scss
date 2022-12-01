@@ -329,6 +329,7 @@
       @media (max-width:1200px) {
         width: 100%;
         height: auto;
+        overflow-y: visible;
       }
 
       .const-form-container-title {
@@ -392,7 +393,6 @@
           @media (max-width:600px) {
             width: 700px;
             overflow: visible;
-
           }
 
           @media (max-width:450px) {
@@ -417,8 +417,6 @@
             display: flex;
             align-items: flex-end;
 
-
-
             .slide-outfit {
               width: 136px;
               height: 136px;
@@ -430,7 +428,6 @@
                 width: 136px;
                 height: 136px;
                 bottom: 0;
-
               }
 
               &.swiper-slide-prev,
@@ -612,8 +609,13 @@
           }
 
           @media (max-width:450px) {
-            width: 270px;
-            left: -35px;
+            width: 400px;
+            left: -15%;
+          }
+
+          @media (max-width:401px) {
+            width: 340px;
+            left: -12%;
           }
 
           @media (max-width:376px) {
@@ -636,6 +638,7 @@
           .swiper-button {
             width: 17px;
             height: 14px;
+
 
             svg {
               width: 100%;

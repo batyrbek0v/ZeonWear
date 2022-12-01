@@ -7757,6 +7757,7 @@ footer .footer-container {
   .constructor-general-container .constructor-flex .constructor-form-container {
     width: 100%;
     height: auto;
+    overflow-y: visible;
   }
 }
 .constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title {
@@ -8014,8 +8015,14 @@ footer .footer-container {
 }
 @media (max-width: 450px) {
   .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
-    width: 270px;
-    left: -35px;
+    width: 400px;
+    left: -15%;
+  }
+}
+@media (max-width: 401px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    width: 340px;
+    left: -12%;
   }
 }
 @media (max-width: 376px) {

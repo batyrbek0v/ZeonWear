@@ -126,6 +126,8 @@ const swiperOutfitShort = new Swiper('.swiper-outfit-short', {
   breakpoints: {
     '320': {
       slidesPerView: 1,
+      slidesOffsetBefore: 25,
+
     },
     '768': {
       slidesPerView: 3,
@@ -156,12 +158,14 @@ const swiperOutfitFoot = new Swiper('.swiper-outfit-foot', {
   breakpoints: {
     '320': {
       slidesPerView: 1,
+      slidesOffsetBefore: 22,
     },
     '767': {
       slidesPerView: 3,
     },
     '1200': {
       slidesPerView: 5,
+      slidesOffsetBefore: 12,
     },
   },
 });
