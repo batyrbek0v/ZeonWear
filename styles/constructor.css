@@ -7746,7 +7746,6 @@ footer .footer-container {
   height: 808px;
   background-color: white;
   border-radius: 16px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding-top: 2rem;
   overflow: hidden;
   display: flex;
@@ -7758,7 +7757,6 @@ footer .footer-container {
   .constructor-general-container .constructor-flex .constructor-form-container {
     width: 100%;
     height: auto;
-    overflow-y: scroll;
   }
 }
 .constructor-general-container .constructor-flex .constructor-form-container .const-form-container-title {
@@ -7795,12 +7793,46 @@ footer .footer-container {
   margin: 60px auto;
   gap: 10px;
 }
+@media (max-width: 769px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders {
+    padding: 0;
+    margin-top: 0;
+    height: 100%;
+    align-content: space-between;
+  }
+}
+@media (max-width: 450px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders {
+    margin-top: 20px;
+  }
+}
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
   width: 769px;
   width: 100%;
   height: 210px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 600px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
+    width: 700px;
+    overflow: visible;
+  }
+}
+@media (max-width: 450px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
+    width: 75%;
+  }
+}
+@media (max-width: 376px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
+    width: 80%;
+  }
+}
+@media (max-width: 340px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider {
+    width: 90%;
+  }
 }
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-slider .next-prev-btns {
   top: 60%;
@@ -7848,8 +7880,28 @@ footer .footer-container {
   align-items: flex-start;
   margin-bottom: 10px;
 }
+@media (max-width: 600px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short {
+    width: 700px;
+    overflow: visible;
+  }
+}
+@media (max-width: 450px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short {
+    width: 75%;
+  }
+}
+@media (max-width: 376px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short {
+    width: 80%;
+  }
+}
+@media (max-width: 340px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short {
+    width: 90%;
+  }
+}
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-short .swiper-outfitshor-wrapper {
-  width: 650px;
   width: 100%;
   height: 86px;
   background-color: white;
@@ -7883,6 +7935,26 @@ footer .footer-container {
   width: 100%;
   height: 135px;
   position: relative;
+}
+@media (max-width: 600px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot {
+    width: 700px;
+  }
+}
+@media (max-width: 450px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot {
+    width: 75%;
+  }
+}
+@media (max-width: 376px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot {
+    width: 80%;
+  }
+}
+@media (max-width: 340px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot {
+    width: 90%;
+  }
 }
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .swiper-outfit-foot .swiper-foot-wrapper {
   width: 100%;
@@ -7930,6 +8002,34 @@ footer .footer-container {
   top: 50%;
   left: 36%;
 }
+@media (max-width: 769px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    left: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    left: -20px;
+  }
+}
+@media (max-width: 450px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    width: 270px;
+    left: -35px;
+  }
+}
+@media (max-width: 376px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    width: 350px;
+    left: -90px;
+  }
+}
+@media (max-width: 341px) {
+  .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns {
+    width: 300px;
+    left: -40px;
+  }
+}
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button-prev::after,
 .constructor-general-container .constructor-flex .constructor-form-container .constructor-sliders .next-prev-btns .swiper-button-next::after {
   display: none;
@@ -7952,7 +8052,6 @@ footer .footer-container {
   flex-direction: column;
   border-radius: 16px;
   background-color: white;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 2rem 1.5rem;
   gap: 24px;
 }

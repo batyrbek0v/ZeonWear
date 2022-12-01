@@ -157,7 +157,7 @@ const swiperOutfitFoot = new Swiper('.swiper-outfit-foot', {
     '320': {
       slidesPerView: 1,
     },
-    '768': {
+    '767': {
       slidesPerView: 3,
     },
     '1200': {

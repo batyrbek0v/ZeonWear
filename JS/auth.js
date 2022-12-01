@@ -19,12 +19,12 @@ const navRoutes = [
   {
     id: 2,
     title: 'Команды',
-    route: '/team'
+    route: '/pages/Team/team.html'
   },
   {
     id: 3,
     title: 'Мужчинам',
-    route: '/pages/men'
+    route: '/pages/men.html'
   },
   {
     id: 4,
